@@ -1,0 +1,402 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+/* Profile and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    padding: 0;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* This will ensure the image maintains its aspect ratio and fills the circle without stretching */
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+/* Tips Section */
+.tips-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.tip-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    position: relative;
+    border-top: 10px solid;
+}
+
+/* Icon */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: -20px auto 10px;
+    display: block;
+}
+
+/* Individual Box Colors */
+.bathing {
+    border-color: #F7DAE0;
+}
+
+.brushing {
+    border-color: #F8E1BC;
+}
+
+.shampoo {
+    border-color: #CDF3EC;
+}
+
+.tip-box h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.tip-box p {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* FAQ Section */
+.faq-container {
+    width: 100%;
+    height: 100vh;
+    background: url('img/second\ bg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+}
+
+.faq-content {
+    background: rgba(255, 255, 255, 0.9); /* เพิ่มความโปร่งใสที่พื้นหลัง */
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ดูเด่นขึ้น */
+}
+
+.welcome-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #28AA90;
+}
+
+.welcome-text span {
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #322525;
+    margin-bottom: 20px;
+}
+
+/* FAQ Items */
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.faq-container {
+    width: 100%;
+    height: 100vh;
+    background: url('img/second\ bg.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* เปลี่ยนจาก center เป็น flex-start เพื่อชิดซ้าย */
+    padding: 50px;
+    position: relative;
+}
+
+.faq-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-left: 50px; /* เพิ่มระยะห่างจากขอบซ้าย */
+}
+
+.faq-item.active {
+    background: #F8F8F8; /* เมื่อเปิดคำตอบ ให้พื้นหลังอ่อนลง */
+}
+
+.faq-question {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: #CDF3EC;
+}
+
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .dropdown-icon {
+    transform: rotate(180deg); /* หมุนลูกศรเมื่อเปิดคำตอบ */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px; /* ปรับ padding ตามที่ต้องการ */
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    transition: max-height 0.5s ease-in-out; /* เพิ่มอนิเมชั่น */
+}
+
+/* เปิดคำตอบ */
+.faq-item.active .faq-answer {
+    max-height: 500px; /* ปรับค่า max-height ตามเนื้อหาของคำตอบ */
+    padding-top: 10px; /* เพิ่ม padding ให้คำตอบห่างจากขอบ */
+}
+
+/* ปรับขนาดลูกศร */
+.dropdown-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* ตั้งค่า layout ของ container */
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+    grid-gap: 30px; /* ระยะห่างระหว่างกล่อง */
+    padding: 40px 10%;
+    background: linear-gradient(360deg, #F7DAE0, #EDFDFD);
+    border-radius: 15px;
+    width: 100%; /* ลดความกว้างเหลือ 90% */
+    max-width: 1600px; /* กำหนดความกว้างสูงสุด */
+    margin: 0 auto; /* จัดกลาง */
+    min-height: 100vh; /* ความสูงเต็มจอ */
+    align-items: start; /* ปรับให้เริ่มจากด้านบน */
+    justify-content: center;
+}
+
+/* หัวข้อหลัก */
+.tips-container h2 {
+    grid-column: span 2; /* ให้หัวข้อกินเต็ม 2 คอลัมน์ */
+    font-size: 48px; 
+    font-weight: 800;
+    color: #322525;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: Denton Test;
+}
+
+/* ตั้งค่ากล่อง tip-item */
+.tip-item {
+    width: 100%;  /* ให้กล่องมีความกว้างเต็ม */
+    max-width: 720px; /* กำหนดความกว้างสูงสุดเป็น 720px */
+    height: 420px; /* ความสูง 420px */
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: flex-start; /* ปรับให้เนื้อหาขึ้นไปด้านบน */
+    margin: 0 auto; /* จัดกลาง */
+}
+
+/* ไอคอน */
+.tip-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    background-color: #FFDDDD; /* พื้นหลังของไอคอน */
+    border-radius: 100%; /* ทำให้เป็นวงกลม */
+}
+
+/* ข้อความ */
+.tip-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #045153;
+    margin-bottom: 10px;
+}
+
+/* รายการ */
+.tip-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.tip-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .tips-container {
+        grid-template-columns: 1fr; /* แสดงเป็นคอลัมน์เดียวในจอเล็ก */
+        width: 100%;
+    }
+
+    .tip-item {
+        width: 100%; /* ปรับให้กล่องเติมเต็มขนาดหน้าจอ */
+        max-width: none; /* ยกเลิกขีดจำกัดความกว้าง */
+    }
+}
+
+@media (max-width: 768px) {
+    .tips-container {
+        grid-template-columns: 1fr; /* แสดงคอลัมน์เดียว */
+    }
+
+    .tip-item {
+        width: 100%;
+        height: auto; /* ปรับความสูงให้ยืดหยุ่น */
+    }
+
+    /* หัวข้อ */
+    .tips-container h2 {
+        font-size: 36px; /* ปรับขนาดฟ้อนต์ให้เล็กลง */
+    }
+}

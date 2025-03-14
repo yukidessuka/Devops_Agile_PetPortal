@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Portal</title>
+    <link rel="stylesheet" href="cart2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="img/LG.png" alt="Logo"></div>
+        <div class="logo-name">Pet Care Portal</div>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="/home/home.html">Home</a></li>
+                <li><a href="/pet-food-product2/pet-food-product2.html">Serve</a></li>
+                <li><a href="/askvet/askvet.html">Ask a Vet</a></li>
+                <li><a href="/appointment/appointment.html">Appointments</a></li>
+                <li><a href="/Myfeed/Myfeed.html">Community</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
+            <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
+            <div class="profile">
+                <a href="/account/index.html"><img src="img/yk.png" alt="Profile"></a>
+                <a href="/account/index.html" class="username">Onwara</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-section">
+        <h1>
+            <img src="img/CART 1.png" alt="Cart Icon" class="cart-icon">
+        </h1>
+    </div>
+
+    <div class="checkout-container">
+        <div class="breadcrumb">
+            <a href="/cart/cart.html" class="back-link">← Back</a>
+            <a href="/cart3/cart3.html" class="next-link">Next →</a>
+        </div>
+
+        <div class="progress-container">
+            <p class="progress-label">Payment</p>
+            <div class="progress-step completed">1</div>
+            <div class="progress-line completed"></div>
+            <div class="progress-step active">2</div>
+            <div class="progress-line"></div>
+            <div class="progress-step">3</div>
+        </div>
+        
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="payment-method">
+          <h2>Select Payment Method</h2>
+          <div class="payment-options">
+            <div class="payment-option">
+              <img src="img/paypal.png" alt="PayPal" class="payment-img">
+            </div>
+            <div class="payment-option">
+              <img src="img/mastercard.png" alt="Mastercard" class="payment-img">
+            </div>
+            <div class="payment-option">
+              <img src="img/kbank.png" alt="KBank" class="payment-img">
+            </div>
+            <div class="payment-option">
+              <div>Credit Card</div>
+            </div>
+            <div class="payment-option">
+              <div>Bank Tranfer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="customer-info-container">
+          <h2 class="customer-title">Customer Information</h2>
+          
+          <form class="customer-form">
+              <div class="input-group">
+                  <label for="email">Email</label>
+                  <div class="input-container">
+                      <input type="email" id="email" placeholder="Enter your email">
+                      <img src="img/icon1.png" alt="Email Icon" class="icon">
+                  </div>
+              </div>
+  
+              <div class="input-group">
+                  <label for="first-name">First Name</label>
+                  <div class="input-container">
+                      <input type="text" id="first-name" placeholder="Enter your first name">
+                      <img src="img/icon23.png" alt="User Icon" class="icon">
+                  </div>
+              </div>
+  
+              <div class="input-group">
+                  <label for="last-name">Last Name</label>
+                  <div class="input-container">
+                      <input type="text" id="last-name" placeholder="Enter your last name">
+                      <img src="img/icon23.png" alt="User Icon" class="icon">
+                  </div>
+              </div>
+          </form>
+      </div>
+
+      <div class="shipping-container">
+        <h2 class="shipping-title">Shipping Address</h2>
+
+        <form class="shipping-form">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                </div>
+                <div class="input-group">
+                    <label for="district">District</label>
+                    <input type="text" id="district" placeholder="Enter district">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="sub-district">Sub-district/Ward</label>
+                    <input type="text" id="sub-district" placeholder="Enter sub-district">
+                </div>
+                <div class="input-group">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" placeholder="Enter postal code">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Enter last name">
+                </div>
+                <div class="input-group">
+                    <label for="province">Province</label>
+                    <input type="text" id="province" placeholder="Enter province">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <img src="img/cart2.png" alt="Footer Banner" class="footer-banner">
+    </footer>
+
+    <div class="order-summary-container">
+      <h2 class="order-summary-title">Order Summary</h2>
+
+      <div class="order-details">
+        <div class="order-item"><span>Items</span> <span id="total-items">0</span></div>
+        <div class="order-item"><span>Sub Total</span> <span id="sub-total">$0.00</span></div>
+        <div class="order-item"><span>Shipping</span> <span id="shipping-cost">$0.00</span></div>
+        <div class="order-item"><span>Taxes</span> <span id="taxes">$0.00</span></div>
+        <div class="order-item"><span>Coupon Discount</span> <span id="discount">$0.00</span></div>
+        <hr>
+        <div class="order-item total"><span>Total</span> <span id="total-price">$0.00</span></div>
+    </div>
+
+      <h3 class="billing-title">Billing Address</h3>
+
+      <div class="billing-address">
+          <div class="billing-header">
+              <img src="img/thailand.png" alt="Thailand Flag" class="flag-icon">
+              <span>Thailand, Bangkok</span>
+              <span>Wongsawang</span>
+          </div>
+          <div class="billing-inputs">
+              <select>
+                  <option>Thailand (TH)</option>
+              </select>
+              <input type="text" placeholder="10800">
+              <button class="confirm-btn">
+                <img src="img/tik.png" alt="Check Icon" class="check-icon-img">
+            </button>
+          </div>
+      </div>
+
+      <button class="place-order-btn">
+        <img src="img/order sum.png" alt="Cart Icon" class="cart-icon-img">
+        Place Order
+    </button>
+  </div>
+
+  <script src="/cart2/cart2.js"></script>
+
+</body>
+</html>

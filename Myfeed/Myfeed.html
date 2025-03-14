@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poly:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feed</title>
+    <link rel="stylesheet" href="Myfeed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- 🔹 Navigation Bar -->
+    <!-- Header -->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        <div class="logo-name">Pet Care Portal</div>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="/home/home.html">Home</a></li>
+                <li><a href="/pet-food-product2/pet-food-product2.html">Serve</a></li>
+                <li><a href="/askvet/askvet.html">Ask a Vet</a></li>
+                <li><a href="/appointment/appointment.html">Appointments</a></li>
+                <li><a href="/Myfeed/Myfeed.html">Community</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
+            <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
+            <div class="profile">
+                <img src="img/profile.png" alt="Profile">
+                <span class="username">Onwara</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🔹 Main Content -->
+    <div class="container">
+        <div class="left-column">
+            <div class="feed-box">
+                <h2>Feed</h2>
+                <p>Learn all about your pet with a personal selection of content, compiled just for you. Browse our articles, breed pages, health resources and more, all guided by common questions from owners like you and vetted by our experts.</p>
+            </div>
+    
+            <div class="search-box">
+                <h3>Search among our almost 1 million answers and articles</h3>
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button class="clear-btn">✖</button>
+                </div>
+            </div>
+            <div class="question-card">
+                <img src="img/dog2.png" alt="Dog Eating">
+                <span class="question-title">Question</span>
+                <h4>How can I help slow down my dog’s eating?</h4>
+                <p>Some dogs are quite the chowhounds – literally. Fortunately, there are some simple modifications that you can make to your dog’s mealtime routine that may help them to actually chew their kibble.</p>
+                <div class="question-footer">
+                    <p>7 people found this helpful</p>
+                    <a href="/Myfeed3/Myfeed3.html">Read more</a>
+                </div>
+            </div>
+            <div class="question-card">
+                <img src="img/cat.png" alt="Cat with Kidney Disease">
+                <span class="question-title">Question</span>
+                <h4>Should cats with kidney disease be fed a specific diet?</h4>
+                <p>It is preferable to feed cats with chronic kidney disease a prescription diet that is lower in protein, sodium, and phosphorus, but higher in fat than over the counter commercial diets.</p>
+                <div class="question-footer">
+                    <p>Be the first to mark this as helpful!</p>
+                    <a href="/Myfeed4/Myfeed4.html">Read more</a>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="right-column">  <!-- ✅ right-column อยู่ใน container แล้ว -->
+            <div class="article-card">
+                <img src="img/dog.png" alt="Dog and Cat">
+                <span class="article-title">Article</span>
+                <h4>Top 10 Dog & Cat Myths Debunked</h4>
+                <p>Whether through a well-intentioned friend or a random Internet forum, it is very likely that you have come across some of the numerous everlasting myths about dogs and cats. Some of them are simply</p>
+                <div class="question-footer">
+                    <p>21 people found this helpful</p>
+                    <a href="/Myfeed1/Myfeed1.html">Read more</a>
+                </div>
+            </div>
+
+        <!-- ✅ การ์ดบทความที่ 2 -->
+            <div class="article-card">
+                <img src="img/rabbit.png" alt="Rabbit">
+                <span class="article-title">Article</span>
+                <h4>Is a Rabbit the Right Pet For You?</h4>
+                <p>Before you choose your pet rabbit, there are several things to consider and prepare for.</p>
+                <div class="question-footer">
+                    <p>17 people found this helpful</p>
+                    <a href="/Myfeed2/Myfeed2.html">Read more</a>
+                </div>
+            </div>
+
+        <!-- ✅ การ์ดฟอรั่ม -->
+            <div class="forum-card">
+                <span class="forum-title">Forum</span>
+                <h4>I noticed my dog limping today...</h4>
+                <p>It sounds like Kreed has injured himself somehow, and it could be that he has a foreign body in his paw (like a grass seed or foxtail), could have a cut on it, or could have strained or torn a</p>
+                <div class="question-footer">
+                    <p>347 people found this helpful</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div> <!-- ✅ ปิด right-column -->
+    </div> <!-- ✅ ปิด container ถูกต้อง -->
+
+    <!-- 🔹 Load More Button -->
+    <div class="load-more">
+        Load more
+    </div>
+</body>
+</html>

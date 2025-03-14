@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <!-- Logo -->
+        <img src="images/logo1.png" alt="Logo" class="logo">
+
+        <!-- Register Container -->
+        <div class="login-container">
+            <div class="form-container">
+                <h2>Sign Up</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">User name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                            <span class="input-group-text">
+                                <img src="symbol/Vector.svg" alt="User Icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <span class="input-group-text">
+                                <img src="symbol/mail.svg" alt="Mail Icon">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                            <span class="input-group-text">
+                                <img src="symbol/pw.svg" alt="Password Icon">
+                            </span>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-btn">Sign Up</button>
+                    <div class="form-footer">
+                        <a href="/login/login.html">Already have an account ?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const registerForm = document.querySelector("form");
+    
+        registerForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+    
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+    
+            try {
+                const response = await fetch("http://localhost:3000/register", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ username, email, password }),
+                });
+    
+                if (response.ok) {
+                    alert("Registration successful!");
+                    window.location.href = "/login/login.html"; // Redirect to login page
+                } else {
+                    const errorText = await response.text();
+                    alert("Error during registration: " + errorText);
+                    console.log(errorText); // ตรวจสอบข้อความจากเซิร์ฟเวอร์
+                }
+            } catch (error) {
+                alert("Error during registration: " + error.message);
+                console.log(error);
+            }
+        });
+    </script>
+</body>
+</html>

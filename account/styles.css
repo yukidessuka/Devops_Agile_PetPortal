@@ -1,0 +1,257 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dbf3ee;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: #6d6d6d;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98.5%;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* โลโก้และชื่อ */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 70px;
+    margin-right: 10px;
+}
+
+.logo-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #28AA90;
+}
+
+/* ไอคอนและโปรไฟล์ */
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons-container i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+    transition: color 0.3s;
+}
+
+.icons-container i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 190px;
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 82px;
+    left: 2px;
+}
+
+/* รูปโปรไฟล์ใน Sidebar */
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* ชื่อผู้ใช้และอีเมล */
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-email {
+    font-size: 10.5px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* เส้นคั่น */
+.sidebar hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* เมนู Sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+/* ไอคอนเมนู */
+.sidebar ul li i {
+    font-size: 18px;
+}
+
+/* เมนู Active */
+.sidebar ul li .active {
+    color: #004d4d;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.sidebar ul li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* ปรับพื้นที่เนื้อหา */
+.content {
+    margin-left: 250px;
+    padding: 130px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* การ์ด Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+    max-width: 100%;
+}
+
+/* รูปแบบการ์ด */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 330px;
+}
+
+/* การ์ดข้อมูลบัญชีและที่อยู่ */
+.account-card, .shipping-card {
+    text-align: left;
+}
+
+/* หัวข้อการ์ด + ปุ่มแก้ไข */
+.account-card h3, .shipping-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* การ์ดโปรไฟล์ */
+.profile-card {
+    text-align: center;
+    padding: 40px;
+    width: 370px;
+}
+
+
+/* รูปโปรไฟล์ */
+.profile-card img {
+    width: 190px;
+    height:200px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+
+/* ข้อมูลภายในโปรไฟล์ */
+.profile-card p {
+    margin: 4px 0;
+}
+
+.profile-card i {
+    margin-right: 8px;
+    color: #004d4d;
+}
+
+/* ไอคอนแก้ไข */
+.edit-icon {
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+}
+
+.edit-icon:hover {
+    color: #004d4d;
+}

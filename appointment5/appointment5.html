@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="appointment5.css"> 
+</head>
+<body>
+
+     <!-- Header -->
+     <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        <div class="logo-name">Pet Care Portal</div>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="/home/home.html">Home</a></li>
+                <li><a href="/pet-food-product2/pet-food-product2.html">Serve</a></li>
+                <li><a href="/askvet/askvet.html">Ask a Vet</a></li>
+                <li><a href="/appointment/appointment.html">Appointments</a></li>
+                <li><a href="/Myfeed/Myfeed.html">Community</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
+            <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
+            <div class="profile">
+                <img src="img/profile.png" alt="Profile">
+                <span class="username">Onwara</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid confirmation-page">
+        <div class="confirmation-content">
+            <h2 class="appointment-title">Book Appointment</h2>
+
+            <div class="progress-container">
+                <div class="progress-line"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot active"><span class="choice-label">Waiting for a response</span></div>
+            </div>
+
+            <div class="confirmation-box">
+                <img src="img/check-correct.png" alt="">
+                <h3 class="success-message">The transaction has been completed successfully.</h3>
+                <p class="confirmation-text">
+                    Please wait for a call back to confirm your appointment within 24 hours.
+                </p>
+            </div>
+        </div>
+
+        <div class="booking-image">
+            <img src="img/appointment.png" alt="Appointment">
+        </div>
+    </div>
+    
+</body>
+</html>

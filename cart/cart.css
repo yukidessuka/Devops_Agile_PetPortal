@@ -1,0 +1,564 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+nav {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    padding: 0;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* ----------------------- Cart Banner ----------------------- */
+.cart-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25px;
+    margin-top: -25px;
+}
+
+.cart-btn {
+    background-color: #39b885;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-btn:hover {
+    background-color: #32a06e;
+}
+
+.cart-section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ----------------------- Breadcrumb Navigation ----------------------- */
+.breadcrumb {
+    width: 70%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.breadcrumb a{
+    z-index: 2;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #028080;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    margin-left: 0px; /* ให้ชิดซ้ายสุด */
+    padding-left: 10px; /* เพิ่ม padding เพื่อให้ดูไม่ติดขอบเกินไป */
+}
+
+.next-link {
+    text-decoration: none;
+    color: #028080;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+}
+
+/* ----------------------- Progress Indicator ----------------------- */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.progress-step {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: 3px solid #ddd; /* เส้นขอบสีเทาเริ่มต้น */
+    color: #ddd; /* ตัวเลขสีเทา */
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    top: 20px;
+}
+
+.progress-step.active {
+    background-color: white;
+    color: #028080; /* ตัวเลขสีเขียว */
+    border: 3px solid #028080; /* เส้นขอบสีเขียว */
+}
+
+.progress-line {
+    width: 120px; /* ปรับความยาวเส้นให้สมดุล */
+    height: 4px;
+    background-color: #ddd; /* เส้นเชื่อมสีเทา */
+    position: relative;
+    top: 20px;
+}
+
+.progress-line.completed {
+    background-color: #ddd !important; /* แก้ไขเส้นที่ผ่านแล้วให้เป็นสีเทาแทนสีเขียว */
+}
+
+.progress-label {
+    position: absolute;
+    top: -50px; /* ขยับ Shipping ขึ้นไปอีก */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #028080;;
+    background-color: white;
+    padding: 0 8px;
+}
+
+/* ----------------------- Cart Content ----------------------- */
+/* ----------------------- ปรับ Layout ให้อยู่ข้างกัน ----------------------- */
+.cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ----------------------- Cart Table ----------------------- */
+/* ปรับขนาดของตารางสินค้าและ Order Summary */
+.cart-items {
+    width: 70%;
+    margin-left: -150px;
+}
+
+/* ขยับหัวข้อ Product ไปทางซ้าย */
+.cart-table thead th.align-left {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* ปรับสไตล์ตารางสินค้า */
+.cart-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px; /* เพิ่มระยะห่างระหว่างสินค้า */
+    text-align: left;
+}
+
+.cart-table thead {
+    background-color: #00a8a8;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 40px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 45% 30% 15% 15%; /* ปรับขนาดคอลัมน์ให้ตรง */
+    align-items: center;
+}
+.cart-table thead tr {
+    display: grid;
+    grid-template-columns: 120% 32% 39% 5%;
+    align-items: center;
+}
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.cart-table tbody tr {
+    display: grid;
+    grid-template-columns: 50% 20% 15% 15%; /* ปรับขนาดให้ลงตัว */
+    align-items: center;
+    background-color: #d0ede6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.cart-table th:first-child, .cart-table td:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.cart-table th:nth-child(2) {
+    text-align: center;
+}
+.cart-table th:nth-child(3),.cart-table th:nth-child(4) {
+    text-align: right;
+    padding-right: 50px;
+}
+.cart-table tbody tr:last-child {
+    margin-bottom: 0;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.product-info img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+/* ปรับปุ่มเพิ่ม/ลดจำนวนสินค้า */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 8px;
+    width: fit-content;
+    margin: auto;
+}
+
+.qty-btn {
+    background-color: #028080;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+}
+
+/* กล่อง Order Summary */
+.order-summary-container {
+    background-color: #d0ede6; /* สีเขียวอ่อน */
+    border-radius: 15px;
+    padding: 25px;
+    width: 400px; /* กำหนดความกว้างที่เหมาะสม */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+}
+
+/* หัวข้อ Order Summary */
+.order-summary-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #026660; /* สีเขียวเข้ม */
+    margin-bottom: 20px;
+}
+
+/* รายละเอียด Order */
+.order-details {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #045153;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.order-item.total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* เส้นคั่น */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+
+/* หัวข้อ Billing Address */
+.billing-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #026660;
+    margin-bottom: 10px;
+}
+
+/* Billing Address Box */
+.billing-address {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Billing Header */
+.billing-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Thailand Flag Icon */
+.flag-icon {
+    width: 20px;
+    height: auto;
+}
+
+/* Billing Input Box */
+.billing-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.billing-inputs select,
+.billing-inputs input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Confirm Button */
+.confirm-btn {
+    background-color: #28AA90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* ปุ่ม Place Order */
+.place-order-btn {
+    background-color: white;
+    border: 2px solid #ffffff;
+    color: #026660;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    background-color: #026660;
+    color: white;
+}
+
+/* ปรับสไตล์ไอคอนรถเข็น */
+.cart-icon-img {
+    width: 24px;
+    height: auto;
+}
+
+/* ----------------------- Shipping Method Section ----------------------- */
+.shipping-method-container {
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 900px; /* ขยายให้เต็มหน้า */
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.shipping-method-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    color:#045153; 
+}
+
+.shipping-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.shipping-option {
+    background-color: #c8ecec;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%; /* ขยายให้กว้างขึ้น */
+    max-width: 850px;
+    text-align: left;
+}
+
+.shipping-option img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.shipping-details {
+    flex-grow: 1;
+    font-size: 18px;
+    justify-content: flex-start;
+    padding-top: 10px;
+    color: #028080
+}
+
+.shipping-price {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+    color: #045153;
+}
+
+.under-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* ป้องกันขอบขาวที่อาจเกิดขึ้น */
+    margin: 0;
+    padding: 0;
+}
+
+.under-banner img {
+    width: 100vw; /* ปรับให้เต็มความกว้างของ viewport */
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}

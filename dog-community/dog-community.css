@@ -1,0 +1,679 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure header takes up full width */
+    position: relative; /* Allow for absolute positioning of the logo */
+}
+
+/* Logo and Name */
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+/* Navigation */
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    display: flex;
+    justify-content: center; /* Center the nav links */
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+/* Profile and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    padding: 0;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image is properly fitted */
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.welcome-section {
+    background: #045153;
+    color: white;
+    padding: 40px 50px;
+    text-align: left;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+    gap: 13rem; /* เพิ่มระยะห่างระหว่างข้อความกับช่องค้นหา */
+}
+
+.back-button {
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute; 
+    left: 40px; 
+    top:  120px;
+}
+
+.back-button:hover {
+    background-color: #28AA90;
+}
+
+.paw-icon {
+    width: 30px; /* กำหนดขนาดของภาพ */
+    height: auto;
+    margin-left: 10px; /* ระยะห่างจากข้อความ */
+}
+
+/* Serch Bar Banner */
+.search-bar {
+    background: #ffffff;
+    padding: 10px;
+    width: 350px; /* ปรับความกว้างของช่องค้นหา */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.search-bar .search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;  /* เพิ่มระยะห่างระหว่าง navbar และ banner */
+    margin-bottom: 40px;  /* เพิ่มระยะห่างระหว่าง banner กับ hamster image */
+    width: 80%;  /* ให้ความกว้างเต็ม 100% */
+    margin: 0 auto;
+    justify-content: center;
+}
+/* Banner */
+.banner {
+    background-color: #045153;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ปรับให้รูปแมวและแบนเนอร์เท่ากัน */
+.community-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.community-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Best Selling Section */
+.best-selling-section {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.best-selling {
+    background-color: #8F8585;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+/* Products */
+.products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-basis: calc(25% - 20px); /* ขนาดของช่องสินค้า 4 ช่องในแถว */
+    min-width: 250px; /* กำหนดขนาดขั้นต่ำของช่อง */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.product img {
+    width: 100px; /* ปรับขนาดให้เท่ากันทุกช่อง */
+    height: 100px; /* กำหนดความสูง */
+    object-fit: cover; /* ให้ภาพเต็มช่องโดยไม่เสียสัดส่วน */
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 12px;
+    color: #F2B846;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.product-reviews {
+    font-size: 12px;
+    color: #777;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* ---------------- question-box ---------------- */
+.header {
+    font-size: 28px; /* ปรับขนาดใหญ่ขึ้น */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.question-box {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
+                4px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    width: 150%;
+    max-width: 1200px;
+    position: relative;
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่าง question box กับ post box */
+}
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.input-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.post-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    outline: none;
+}
+
+.post-button:hover {
+    color: #000;
+}
+
+/* ---------------- Perch ---------------- */
+.post-box {
+    width: 150%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    border: 1px solid #ddd; /* เส้นขอบบาง */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่าง question box กับ post box */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.post-content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-header {
+    font-size: 12px;
+    color: #888;
+}
+
+.comment-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.comment-text {
+    font-size: 13px;
+    color: #333;
+}
+
+.comment-profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+.post-actions i {
+    margin-right: 5px;
+}
+
+/* ---------------- Tle ---------------- */
+.post-box {
+    width: 150%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    border: 1px solid #ddd; /* เส้นขอบบาง */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่าง question box กับ post box */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.post-content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-header {
+    font-size: 12px;
+    color: #888;
+}
+
+.comment-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.comment-text {
+    font-size: 13px;
+    color: #333;
+}
+
+.comment-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+.post-actions i {
+    margin-right: 5px;
+}
+
+/* ---------------- Folk ---------------- */
+.post-box {
+    width: 150%;
+    max-width: 1200px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    border: 1px solid #ddd; /* เส้นขอบบาง */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.post-time {
+    font-size: 12px;
+    color: #666;
+}
+
+.post-content {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-header {
+    font-size: 12px;
+    color: #888;
+}
+
+.comment-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.comment-text {
+    font-size: 13px;
+    color: #333;
+}
+
+.comment-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+.post-actions i {
+    margin-right: 5px;
+}

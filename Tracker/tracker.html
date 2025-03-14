@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet care Portal</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@275;500;600;800&display=swap" />
+    <link rel="stylesheet" href="tracker.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="rectangle">
+            <div class="green-no-bg"></div>
+            <div class="ellipse"></div>
+            <div class="rectangle-1">
+                <span class="onwara">Onwara</span>
+                <div class="oui-arrow-up"></div>
+            </div>
+            <div class="solar-cart-linear">
+                <div class="solar-cart-linear-2"><div class="group"></div></div>
+            </div>
+            <div class="mynaui-chat"></div>
+            <a href="/Myfeed/Myfeed.html" class="community">Community</a>
+            <a href="/askvet/askvet.html" class="ask-a-vet">Ask a vet</a>
+            <span class="pet-care-portal">Pet care Portal</span>
+            <a href="/pet-food-product2/pet-food-product2.html" class="serve">Serve</a>
+            <a href="/home/home.html" class="home">Home</a>
+            <a href="/appointment/appointment.html" class="appointment">Appointment</a>
+            <div class="line"></div>
+            <div class="line-3"></div>
+            <div class="line-4"></div>
+            <div class="line-5"></div>
+            <div class="line-6"></div>
+            <div class="line-7"></div>
+        </div>
+        <div class="rectangle-8">
+            <div class="ellipse-9"></div>
+            <span class="onwara-p">Onwara P.</span>
+            <span class="email">s6607012660442@email.kmutnb.ac.th</span>
+            <div class="line-a"></div>
+            <a href="/account/index.html" class="account">Account</a>
+            <div class="profile-fill"></div>
+            <a href="/pet-profile/index.html" class="pet-profile-b">Pet Profile</a>
+            <div class="mdi-pets">
+                <div class="waiting-appointments-calendar"></div>
+            </div>
+            <a href="/Tracker/tracker.html" class="tracker">Tracker</a>
+            <div class="waiting-appointments-calendar-c"></div>
+            <div class="logout-outline"></div>
+            <a href="/login/login.html" class="log-out"> Log out</a>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <section class="search-bar">
+                <input type="text" placeholder="Search for Specialists Doctors...">
+            </section>
+            
+            <section class="doctors-list">
+                <div class="doctor-card">
+                    <img src="img/doc1.png" alt="Dr. Carowell">
+                    <h3>Dr. Carowell</h3>
+                    <p>BDS, Certified in Pet Care Portal<br>Pet Care, Thailand</p>
+                    <a href="/appointment/appointment.html">Book Appointment</a>
+                </div>
+                <div class="doctor-card">
+                    <img src="img/doc2.png" alt="Dr. Healthcare">
+                    <h3>Dr. Healthcare</h3>
+                    <p>BDS, Certified in Pet Care Portal<br>Pet Care, Thailand</p>
+                    <a href="/appointment/appointment.html">Book Appointment</a>
+                </div>
+                <div class="doctor-card">
+                    <img src="img/doc3.png" alt="Dr. Sara">
+                    <h3>Dr. Sara</h3>
+                    <p>BDS, Certified in Pet Care Portal<br>Pet Care, Thailand</p>
+                    <a href="/appointment/appointment.html">Book Appointment</a>
+                </div>
+            </section>
+            
+            <section class="appointment-list">
+                <h2>Appointment List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Pet</th>
+                            <th>Service</th>
+                            <th>Phone Number</th>
+                            <th>Date & Time</th>
+                            <th>Doctor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="appointment-list-body">
+                        <!-- Data will be injected here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Fetch the appointments and display them in the table
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('http://localhost:3001/api/appointments');
+                
+                if (response.ok) {
+                    const appointments = await response.json();
+                    const appointmentListBody = document.getElementById('appointment-list-body');
+                    
+                    appointments.forEach(appointment => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${appointment.name}</td>
+                            <td>${appointment.petName}</td>
+                            <td>${appointment.service}</td>
+                            <td>${appointment.contact}</td>
+                            <td>${appointment.date} | ${appointment.time}</td>
+                            <td>${appointment.doctor}</td>
+                            <td class="status">
+                                <span class="status-${appointment.status.toLowerCase()}">${appointment.status}</span>
+                            </td>
+                        `;
+                        appointmentListBody.appendChild(row);
+                    });
+                } else {
+                    console.error('Failed to fetch appointments');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

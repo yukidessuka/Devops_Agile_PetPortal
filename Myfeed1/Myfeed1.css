@@ -1,0 +1,262 @@
+/* 🔹 General Styling */
+body {
+    font-family: Poppins;
+    background: #D4FFF6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+/* Profile and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* This will ensure the image maintains its aspect ratio and fills the circle without stretching */
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* 🔹 Sub Navigation Bar */
+.sub-nav {
+    display: flex;
+    justify-content: space-between; /* กระจายลิงก์และช่องค้นหา */
+    align-items: center;
+    padding: 10px 40px;
+    background: #D4FFF6;
+    border-bottom: 1px solid #D9D9D9; /* เส้นขีดแยกด้านล่าง */
+}
+
+/* 🔹 ลิงก์ด้านซ้าย */
+.sub-links {
+    display: flex;
+    gap: 20px; /* ระยะห่างระหว่างลิงก์ */
+}
+
+.sub-links a {
+    color: #28AA90;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+/* 🔹 Article Header */
+.article-header {
+    display: flex;
+    flex-direction: row; /* จัดเรียงเป็นแนวนอน */
+    align-items: flex-start; /* จัดให้ปุ่มและหัวข้ออยู่ตรงกลาง */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px; /* ลดระยะห่างจากปุ่ม */
+    margin-bottom: 10px; /* ลดระยะห่างระหว่างหัวข้อกับข้อความด้านล่าง */
+}
+
+/* 🔹 Title */
+.article-title h1 {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #045153;
+    margin-left: 73px; /* เพิ่มระยะห่างไปทางขวา */
+    margin-top: 5px; /* ลดระยะห่างจากปุ่ม */
+    margin-bottom: 5px; /* ลดระยะห่างระหว่างหัวข้อกับข้อความด้านล่าง */
+}
+
+/* Section: Author Information */
+.author-info {
+    color: #045153;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;  /* ลดระยะห่างระหว่างบรรทัด */
+    margin-left: 47px;
+}
+
+.author-info p {
+    margin: 0px;
+}
+
+.author-info .written-by {
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 110px;
+}
+
+.author-info .author-name {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 110px;
+}
+
+.author-info .author-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 110px;
+}
+
+.author-info .author-specialty {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0; /* ระยะห่างจากองค์ประกอบอื่นๆ */
+    margin-left: 110px;
+}
+
+/* 🔹 Container */
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 45px;
+    background-color:#E0E0E0 ;
+    border-radius: 10px;
+}
+
+.back-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.back-button img {
+    width: 30px; /* ขนาดของปุ่ม */
+    height: auto;
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ให้เป็นมือเมื่อชี้ไปที่ปุ่ม */
+}
+
+/* 🔹 Article Content */
+.article-content h2 {
+    color: #045153;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.article-content p {
+    color: #045153;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.article-content img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* 🔹 Feedback Section */
+.feedback-section {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    margin-top: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section h3 {
+    color: #09B5B9;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.feedback-section p {
+    color: #09B5B9;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.feedback-btn {
+    background: #28AA90;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}

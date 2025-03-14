@@ -1,0 +1,252 @@
+/* รีเซ็ตค่าเริ่มต้น */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #e5f7f5;
+}
+
+/* Sidebar */
+.container {
+    display: flex;
+    flex-grow: 1;
+    margin-top: 85px;
+}
+
+.sidebar {
+    width: 150px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 60px);
+}
+
+.sidebar .logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile .user-name {
+    font-weight: bold;
+}
+
+.profile .user-email {
+    font-size: 8px;
+    color: gray;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.sidebar nav ul li a {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(140, 138, 138);
+}
+
+.sidebar nav ul li a i {
+    font-size: 12px;
+    color: rgb(140, 138, 138);
+    transition: 0.3s;
+}
+
+.sidebar nav ul li:hover a,
+.sidebar nav ul li.active a {
+    color: #008080;
+    font-weight: bold;
+}
+
+.sidebar nav ul li:hover a i,
+.sidebar nav ul li.active a i {
+    color: #008080;
+}
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    width: 120px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* Header */
+.full-width-header {
+    width: 100%;
+    background: #ffffff;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #008080;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.top-nav ul li a {
+    text-decoration: none;
+    color: rgb(140, 138, 138);
+    gap: 50px;
+    font-weight: bold;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu hr {
+    border: 0;
+    height: 25px;
+    width: 1px;
+    background-color: #000000;
+    margin: 10px;
+}
+
+.user-menu a i {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.user-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content a .icon {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.pet-info {
+    width: 1000px;
+    margin-top: 15px;
+    background-color: transparent;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 50px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 1200px;
+}
+
+.pet-details {
+    flex: 1;
+    margin-right: 20px;
+    padding-left: 50px;
+}
+
+.pet-details h2 {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    color: #008080;
+}
+
+.details-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    padding-left: 50px;
+    width: 350px; /* กำหนดความกว้างเท่ากันสำหรับแต่ละรายการ */
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #000000;
+    margin-right: 30px;
+    width: 100px; /* กำหนดความกว้างของ label ให้เท่ากัน */
+}
+
+.detail-value {
+    font-size: 16px;
+    color: rgb(87, 85, 85);
+}
+
+.pet-photo {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.pet-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}

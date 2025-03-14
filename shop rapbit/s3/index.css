@@ -1,0 +1,2089 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.main-container {
+  width: 100vw; /* หรือ width: 100% */
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main-container {
+  position: relative;
+  width: 1920px;
+  height: 3358px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.flex-row-bbc {
+  position: relative;
+  width: 2009px;
+  height: 1080px;
+  margin: -3px 0 0 -89px;
+  z-index: 217;
+}
+.rectangle {
+  position: absolute;
+  width: 1953px;
+  height: 105px;
+  top: 0;
+  left: 56px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  z-index: 4;
+}
+.green-no-bg {
+  position: absolute;
+  width: 107px;
+  height: 102px;
+  top: 1px;
+  left: 39px;
+  background: url(./assets/images/74f0de25a62d53a3377f2d0ef2d70ca35a851e0c.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+}
+.ellipse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 1752px;
+  background: url(./assets/images/5b0bb072-8e5f-4ee1-8a8a-3724079f6ba8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 13;
+  border-radius: 50%;
+}
+.appointment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 28.57%;
+  top: 33.33%;
+  left: 53.41%;
+  color: #e0e0e0;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 31;
+}
+.community {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 28.57%;
+  top: 33.33%;
+  left: 65.85%;
+  color: #e0e0e0;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 28;
+}
+.serve {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 28.57%;
+  top: 33.33%;
+  left: 23.86%;
+  color: #28aa90;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 25;
+}
+.rectangle-1 {
+  position: absolute;
+  width: 113px;
+  height: 27px;
+  top: 36px;
+  left: 1775px;
+  background: #045153;
+  z-index: 11;
+  border-radius: 55px;
+}
+.onwara {
+  position: absolute;
+  width: 48px;
+  height: 18px;
+  top: 5px;
+  left: 33px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  z-index: 12;
+}
+.ask-a-vet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 28.57%;
+  top: 34.29%;
+  left: 43.63%;
+  color: #e0e0e0;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20%;
+  top: 34.29%;
+  left: 34.56%;
+  color: #d9d9d9;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 22;
+}
+.vector {
+  position: absolute;
+  width: 21.938px;
+  height: 24.469px;
+  top: 36px;
+  left: 1596px;
+  background: url(./assets/images/159eb314-ea6a-4e49-98ce-4f56e9aa4b72.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 20;
+}
+.pet-care-portal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 37px;
+  left: 172px;
+  color: #28aa90;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 19;
+}
+.solar-cart-linear {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 37px;
+  left: 1659px;
+  z-index: 16;
+  overflow: hidden;
+}
+.solar-cart-linear-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 17;
+  overflow: hidden;
+}
+.group {
+  position: relative;
+  width: 21.053px;
+  height: 21px;
+  margin: 3.5px 0 0 3.474px;
+  background: url(./assets/images/b46cf257-7825-4313-99ed-a6f5e56c04fa.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 18;
+}
+.oui-arrow-up {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 39px;
+  left: 1390px;
+  background: url(./assets/images/a95861d3-46ea-4209-b92f-19f6f34ca4fc.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+  overflow: hidden;
+}
+.line {
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  top: 42px;
+  left: 1727px;
+  background: url(./assets/images/10b89082-2f42-45a6-96f2-3fae3f6572ec.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 33;
+}
+.line-3 {
+  position: absolute;
+  width: 0.05%;
+  top: 48.77%;
+  left: 35.84%;
+  background: url(./assets/images/456d3ae2-6f11-494c-bf68-4dc761a9d073.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 23;
+}
+.line-4 {
+  position: absolute;
+  width: 0.05%;
+  top: 53.33%;
+  left: 25.14%;
+  background: url(./assets/images/02e9de13-cf3b-437d-9538-08c93d0382a2.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 26;
+}
+.line-5 {
+  position: absolute;
+  width: 0.36%;
+  top: 53.33%;
+  left: 67.28%;
+  background: url(./assets/images/28ae0bc4-3d9a-42de-9584-b7102eb8e8dd.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 29;
+}
+.line-6 {
+  position: absolute;
+  width: 0.11%;
+  top: 53.33%;
+  left: 55.52%;
+  background: url(./assets/images/d7bff5a3-aa7b-438b-83e8-405f3d4c5c0e.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 32;
+}
+.line-7 {
+  position: absolute;
+  width: 0.07%;
+  top: 54.29%;
+  left: 45.04%;
+  background: url(./assets/images/16415227-07e7-44bf-9b1d-537bd52aaf28.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 7;
+}
+.rectangle-8 {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  top: 0;
+  left: 88px;
+  background: #045153;
+  opacity: 0.3;
+  z-index: 1;
+}
+.back {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 75.6px;
+  height: 4.63%;
+  top: 13.15%;
+  left: 7.67%;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  text-align: left;
+  z-index: 216;
+}
+.ooui-next-rtl {
+  position: absolute;
+  width: 1.34%;
+  height: 2.31%;
+  top: 13.38%;
+  left: 6.07%;
+  z-index: 217;
+  overflow: hidden;
+}
+.vector-9 {
+  position: relative;
+  width: 16.2px;
+  height: 20.833px;
+  margin: 2.083px 0 0 5.4px;
+  background: url(./assets/images/e51bef6d-c200-4225-9b26-e3c68e03a3d0.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 218;
+}
+.for-help-owner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 295px;
+  left: calc(50% - 292.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 780;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 178;
+}
+.the-best-food {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 387px;
+  left: calc(50% - 263.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 780;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
+}
+.friend-for-cat {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 514px;
+  left: calc(50% - 271.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 780;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 177;
+}
+.the-best-toys {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 514px;
+  left: calc(50% - 169.5px);
+  color: #ffffff;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.832px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 176;
+}
+.cat-food-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 514px;
+  left: calc(45% - 157.5px);
+  color: #ffffff;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.832px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 167;
+}
+.next-ltr {
+  position: absolute;
+  width: 41px;
+  height: 37px;
+  top: 667px;
+  left: 965px;
+  background: url(./assets/images/5092d04a-7576-47ef-95a2-d9d9088e8c1a.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 170;
+  overflow: hidden;
+}
+.next-ltr-a {
+  position: absolute;
+  width: 41px;
+  height: 37px;
+  top: 667px;
+  left: 1085px;
+  background: url(./assets/images/12d2b8db-906b-4182-98ca-3c834aee5149.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 169;
+  overflow: hidden;
+}
+.frame {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 86px;
+  height: 14px;
+  top: 678px;
+  left: 50%;
+  transform: translate(1.74%, 0);
+  z-index: 171;
+}
+.ellipse-b {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(./assets/images/5199612e-d8ba-446f-9233-d9c6dba43ed8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 172;
+  border-radius: 50%;
+}
+.ellipse-c {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(./assets/images/c202d543-bde1-4fe3-8abf-70c1b91115db.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 173;
+}
+.ellipse-d {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(./assets/images/ce936ebd-0991-4e81-95a7-882e1d872d56.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 174;
+  border-radius: 50%;
+}
+.ellipse-e {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(./assets/images/2b05442b-ab85-42b1-8354-20f9efbeac45.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 175;
+  border-radius: 50%;
+}
+.vector-f {
+  position: absolute;
+  width: 1630px;
+  height: 836px;
+  top: 550px;
+  left: 89px;
+  background: url(./assets/images/bcb59325-6dec-4729-95aa-db877c45ee9c.png)
+    no-repeat center;
+  background-size: cover;
+  filter: blur(153px);
+  z-index: 3;
+}
+.rectangle-10 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 281.693px;
+  height: 45.701px;
+  margin: 394px 0 0 77.907px;
+  background: #08b4b9;
+  z-index: 181;
+  border-radius: 25px;
+}
+.kitten-months {
+  flex-shrink: 0;
+  position: relative;
+  height: 23.437px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 181;
+}
+.flex-row-cda {
+  position: relative;
+  width: 1654.936px;
+  height: 404px;
+  margin: 0.3px 0 0 41px;
+  z-index: 193;
+}
+.image {
+  position: absolute;
+  width: 20.3%;
+  height: 72.67%;
+  top: 7%;
+  left: 0;
+  background: url(./assets/images/d01945e1-dfa2-46b0-84c6-0190d04f436d.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 46;
+}
+.image-11 {
+  position: absolute;
+  width: 213px;
+  height: 61.82%;
+  top: 5.39%;
+  left: 50%;
+  background: url(./assets/images/7b8e9424f1a2654b645e74d5b94d3c0e2f44e1fd.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(66.45%, 0);
+  z-index: 166;
+}
+.image-12 {
+  position: absolute;
+  width: 15.6%;
+  height: 58.92%;
+  top: 10.7%;
+  left: 83.86%;
+  background: url(./assets/images/89f51f9417d72ecfbe8ca61d75bfd8c5d1686f9f.png)
+    no-repeat center;
+  background-size: 100;
+  z-index: 82;
+}
+.rectangle-13 {
+  position: absolute;
+  width: 16.09%;
+  height: 86.85%;
+  top: 12.16%;
+  left: 2.22%;
+  background: #d9d9d9;
+  z-index: 37;
+  border-radius: 20px;
+}
+.frame-14 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 210.409px 0 0 5.071px;
+  z-index: 38;
+}
+.royal-canin-persian-kitten {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 39;
+}
+.price {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 40;
+}
+.rectangle-15 {
+  position: relative;
+  width: 193.992px;
+  height: 44.302px;
+  margin: 18.597px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 44;
+  border-radius: 40.85px;
+}
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.66%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045053;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 43;
+}
+.vector-16 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.06%;
+  left: 10.88%;
+  background: url(./assets/images/6d6c3cd0-ae96-474c-8f1e-76381221227c.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 45;
+}
+.rectangle-17 {
+  position: absolute;
+  width: 16.09%;
+  height: 86.85%;
+  top: 12.16%;
+  left: 29.53%;
+  background: #d9d9d9;
+  z-index: 193;
+  border-radius: 20px;
+}
+.image-18 {
+  position: relative;
+  width: 153px;
+  height: 178.947px;
+  margin: 15.205px 0 0 56.23px;
+  background: url(./assets/images/f7691cdd-f5c3-4567-a401-bcb6d7690bf1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 202;
+}
+.frame-19 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 6.257px 0 0 5.072px;
+  z-index: 194;
+}
+.whiskas-kitten-cat-food {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 195;
+}
+.price-1a {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 196;
+}
+.rectangle-1b {
+  position: relative;
+  width: 193.992px;
+  height: 44.302px;
+  margin: 8.597px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 200;
+  border-radius: 40.85px;
+}
+.add-to-cart-1c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.66%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 199;
+}
+.vector-1d {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.06%;
+  left: 10.88%;
+  background: url(./assets/images/61e02e16-c106-406b-bb5b-1e350a4997df.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 201;
+}
+.rectangle-1e {
+  position: absolute;
+  width: 16.14%;
+  height: 87.07%;
+  top: 12.44%;
+  left: 83.86%;
+  background: #d9d9d900;
+  z-index: 73;
+  border-radius: 20px;
+}
+.frame-1f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 253.068px;
+  margin: 210.985px 0 0 5.087px;
+  z-index: 74;
+}
+.proplan-kitten-starter {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 75;
+}
+.price-20 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 76;
+}
+.rectangle-21 {
+  position: relative;
+  width: 194.57px;
+  height: 44.413px;
+  margin: 18.693px 0 0 43.238px;
+  border: 1.485px solid #04505300;
+  z-index: 80;
+  border-radius: 40.85px;
+}
+.add-to-cart-22 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 79;
+}
+.vector-23 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.89%;
+  background-size: 100% 100%;
+  z-index: 81;
+}
+.rectangle-24 {
+  position: absolute;
+  width: 16.09%;
+  height: 87.07%;
+  top: 12.93%;
+  left: 56.67%;
+  background: #d9d9d900;
+  z-index: 157;
+  border-radius: 20px;
+}
+.frame-25 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 199.985px 0 0 5.072px;
+  z-index: 158;
+}
+.mcadams-cats-kittens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 42px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 540;
+  line-height: 21.2px;
+  text-align: center;
+  z-index: 159;
+}
+.price-26 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 160;
+}
+.rectangle-27 {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 7.693px 0 0 43.109px;
+  border: 1.485px solid #04505300;
+  z-index: 164;
+  border-radius: 40.85px;
+}
+.add-to-cart-28 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 163;
+}
+.vector-29 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background-size: 100% 100%;
+  z-index: 165;
+}
+.flex-row-d {
+  position: relative;
+  width: 1630.676px;
+  height: 436.067px;
+  margin: 26.933px 0 0 66.358px;
+  z-index: 205;
+}
+.rectangle-2a {
+  position: absolute;
+  width: 281.693px;
+  height: 45.701px;
+  top: 0;
+  left: 11.548px;
+  background: #08b4b9;
+  z-index: 183;
+  border-radius: 25px;
+}
+.adult-1-years {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 23.437px;
+  top: 10.546px;
+  left: calc(50% - 59.64px);
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 184;
+}
+.image-2b {
+  position: absolute;
+  width: 150px;
+  height: 40%;
+  top: 21.62%;
+  left: 56%;
+  background: url(./assets/images/0605bffe6273d0213f47690998c9e7f047fc34fd.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(39.33%, 0);
+  z-index: 142;
+}
+.parent-container {
+  position: relative; /* กำหนดพาเรนต์ container */
+}
+
+.image-2c {
+  position: absolute;
+  width: 9.57%;
+  height: 55.77%;
+  top: 15.54%;
+  left: 4%; /* ขยับไปทางขวา */
+  background: url(./assets/images/142f3e79f4fc8beb125c7715b34b044a0038a317.png) no-repeat center;
+  background-size: cover;
+  z-index: 94;
+}
+.rectangle-2d {
+  position: absolute;
+  width: 16.33%;
+  height: 80.67%;
+  top: 17.96%;
+  left: 0.7%;
+  background: #d9d9d9;
+  z-index: 85;
+  border-radius: 20px;
+}
+.frame-2e {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 200.985px 0 0 5.072px;
+  z-index: 86;
+}
+.friskies-adult-surfin-favourites {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 87;
+}
+.price-2f {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 88;
+}
+.add-to-cart-30 {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 8.693px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 92;
+  border-radius: 40.85px;
+}
+.vector-31 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 91;
+}
+.rectangle-32 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background: url(./assets/images/79cb85fa-05be-4280-b655-2ad17ca753ec.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 93;
+}
+.image-33 {
+  position: absolute;
+  width: 16.33%;
+  height: 80.67%;
+  top: 19.33%;
+  left: 28.36%;
+  background: #d9d9d9;
+  z-index: 121;
+  border-radius: 20px;
+}
+.frame-34 {
+  position: relative;
+  width: 186px;
+  height: 149.462px;
+  margin: 25.795px 0 0 40.23px;
+  background: url(./assets/images/fd30fefa-1494-4362-9719-398a0507fcd6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 130;
+}
+.royal-canin-kitten {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 25.228px 0 0 5.072px;
+  z-index: 122;
+}
+.price-35 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 41px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 540;
+  line-height: 21px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 123;
+}
+.add-to-cart-36 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 124;
+}
+.vector-37 {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 18.193px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 128;
+  border-radius: 40.85px;
+}
+.text-20 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 127;
+}
+.img-14 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background: url(./assets/images/21145381-56bb-459c-a76a-173dc569dafc.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 129;
+}
+.rectangle-38 {
+  position: absolute;
+  width: 16.33%;
+  height: 80.67%;
+  top: 19.33%;
+  left: 55.95%;
+  background: #d9d9d9;
+  z-index: 133;
+  border-radius: 20px;
+}
+.frame-39 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 199.985px 0 0 5.072px;
+  z-index: 134;
+}
+.buzz-cat-salmon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 42px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 540;
+  line-height: 21.2px;
+  text-align: center;
+  z-index: 135;
+}
+.price-3a {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 136;
+}
+.rectangle-3b {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 7.693px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 140;
+  border-radius: 40.85px;
+}
+.add-to-cart-3c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 139;
+}
+.vector-3d {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background: url(./assets/images/b5653428-d38f-43ab-916b-a8e49d0c5cec.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 141;
+}
+.rectangle-3e {
+  position: absolute;
+  width: 16.33%;
+  height: 80.67%;
+  top: 19.33%;
+  left: 83.67%;
+  background: #d9d9d9;
+  z-index: 205;
+  border-radius: 20px;
+}
+.image-3f {
+  position: relative;
+  width: 171px;
+  height: 145px;
+  margin: 24.754px 0 0 47.23px;
+  background: url(./assets/images/f2a6859d-ed04-4565-a433-3a765c7b7378.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 214;
+}
+.frame-40 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 31.231px 0 0 5.072px;
+  z-index: 206;
+}
+.go-cat-senior {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 211.766px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 207;
+}
+.price-41 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 208;
+}
+.rectangle-42 {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 8.693px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 212;
+  border-radius: 40.85px;
+}
+.add-to-cart-43 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 211;
+}
+.vector-44 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background: url(./assets/images/474a07c8-d739-4d5c-bd9f-251355de3ca0.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 213;
+}
+.flex-row-dc {
+  position: relative;
+  width: 1229.604px;
+  height: 422.54px;
+  margin: 24.46px 0 0 66.487px;
+  z-index: 190;
+}
+.rectangle-45 {
+  position: absolute;
+  width: 249.683px;
+  height: 45.701px;
+  top: 0;
+  left: 0;
+  background: #08b4b9;
+  z-index: 189;
+  border-radius: 25px;
+}
+.image-46 {
+  position: absolute;
+  width: 31.14%;
+  height: 83.59%;
+  top: 0.08%;
+  left: 68.86%;
+  background: url(./assets/images/9fa0403f2e714bcd264ec32805784c6941caf329.png)
+    no-repeat center;
+  background-size: 50%; /* ปรับขนาดของรูปให้เล็กลงเป็น 80% */
+  z-index: 58;
+}
+
+.health-food {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 23.437px;
+  top: 10.546px;
+  left: calc(50% - 545.01px);
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 190;
+}
+.rectangle-47 {
+  position: absolute;
+  width: 21.65%;
+  height: 83.04%;
+  top: 16.96%;
+  left: 0.43%;
+  background: #d9d9d9;
+  z-index: 109;
+  border-radius: 20px;
+}
+.wet-cat-food {
+  position: relative;
+  width: 202.225px;
+  height: 149.708px;
+  margin: 30.409px 0 0 37.23px;
+  background: url(./assets/images/af8dbcb0-e4c3-4098-b7a0-6ae3d0394af3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 118;
+}
+.frame-48 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 29.792px 0 0 5.072px;
+  z-index: 110;
+}
+.roral-canin-dighest {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 87;
+}
+.price-49 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 112;
+}
+.rectangle-4a {
+  position: relative;
+  width: 193.992px;
+  height: 44.302px;
+  margin: 18.096px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 116;
+  border-radius: 40.85px;
+}
+.add-to-cart-4b {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.66%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 115;
+}
+.vector-4c {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.06%;
+  left: 10.88%;
+  background: url(./assets/images/dc2be4c6-7c8f-412d-a1e0-5e6a5f172e6d.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 117;
+}
+.rectangle-4d {
+  position: absolute;
+  width: 21.65%;
+  height: 83.04%;
+  top: 16.96%;
+  left: 37.03%;
+  background: #d9d9d9;
+  z-index: 97;
+  border-radius: 20px;
+}
+.image-4e {
+  position: relative;
+  width: 139.343px;
+  height: 167.251px;
+  margin: 24.562px 0 0 62.128px;
+  background: url(./assets/images/d736cd2d-e5d4-42c2-910e-677a80ae1a3a.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 106;
+}
+.frame-4f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 18.096px 0 0 5.072px;
+  z-index: 98;
+}
+
+.rectangle-5d {
+  position: absolute;
+  width: 21.65%;
+  height: 83.04%;
+  top: 16.96%;
+  left: 111.0%;
+  background: #d9d9d9;
+  z-index: 97;
+  border-radius: 20px;
+}
+.image-5e {
+  position: relative;
+  width: 139.343px;
+  height: 167.251px;
+  margin: 24.562px 0 0 62.128px;
+  background: url(./assets/images/f12.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 106;
+}
+.frame-5f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 18.096px 0 0 5.072px;
+  z-index: 98;
+}
+.buzz-netura-protein {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 87;
+}
+.price-50 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 100;
+}
+.rectangle-51 {
+  position: relative;
+  width: 193.992px;
+  height: 44.302px;
+  margin: 18.096px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 104;
+  border-radius: 40.85px;
+}
+.add-to-cart-52 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.66%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+.vector-53 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.06%;
+  left: 10.88%;
+  background: url(./assets/images/4a085b56-98c4-46df-bafd-427d7b299b33.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 105;
+}
+.rectangle-54 {
+  position: absolute;
+  width: 21.65%;
+  height: 83.04%;
+  top: 16.96%;
+  left: 73.71%;
+  background: #d9d9d9;
+  z-index: 49;
+  border-radius: 20px;
+}
+.frame-55 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 252.317px;
+  margin: 200.409px 0 0 5.072px;
+  z-index: 50;
+}
+.royal-canin-wet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 51;
+}
+.price-56 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 52;
+}
+.rectangle-57 {
+  position: relative;
+  width: 193.992px;
+  height: 44.302px;
+  margin: 8.596px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 56;
+  border-radius: 40.85px;
+}
+.add-to-cart-58 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.66%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 55;
+}
+.vector-59 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.06%;
+  left: 10.88%;
+  background: url(./assets/images/ea8b55bd-d45d-476b-86b6-14e0d08a700c.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 57;
+}
+.rectangle-5a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 281.693px;
+  height: 45.701px;
+  margin: 53.222px 0 0 62.68px;
+  background: #08b4b9;
+  z-index: 187;
+  border-radius: 25px;
+}
+.others {
+  flex-shrink: 0;
+  position: relative;
+  height: 23.437px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 187;
+}
+.flex-row-c {
+  position: relative;
+  width: 704.264px;
+  height: 359.754px;
+  margin: 36.323px 0 0 53.77px;
+  z-index: 145;
+}
+.rectangle-5b {
+  position: absolute;
+  width: 37.81%;
+  height: 97.78%;
+  top: 0;
+  left: 62.19%;
+  background: #d9d9d900;
+  z-index: 61;
+  border-radius: 20px;
+}
+.rectangle-5c {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 269.678px 0 0 43.109px;
+  border: 1.485px solid #04505300;
+  z-index: 68;
+  border-radius: 40.85px;
+}
+.add-to-cart-5d {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 67;
+}
+.vector-5e {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background: url(./assets/images/a7e8e316-99c0-413e-b9ec-247335def4de.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 69;
+}
+.image-5f {
+  position: absolute;
+  width: 93.33%;
+  height: 65.33%;
+  top: 0;
+  left: 3.33%;
+  background: url(./assets/images/db6e434d52a4e5caa76c9bc40137f2a5be4f2275.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 70;
+}
+.frame-60 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 94.76%;
+  top: 59.98%;
+  left: 1.9%;
+  z-index: 62;
+}
+.purina-one-pouch {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 540;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 87;
+}
+.price-61 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 64;
+}
+.rectangle-62 {
+  position: absolute;
+  width: 37.81%;
+  height: 97.78%;
+  top: 2.22%;
+  left: 0;
+  background: #d9d9d9;
+  z-index: 145;
+  border-radius: 20px;
+}
+.rectangle-63 {
+  position: relative;
+  width: 193.992px;
+  height: 44.413px;
+  margin: 269.678px 0 0 43.109px;
+  border: 1.485px solid #045153;
+  z-index: 152;
+  border-radius: 40.85px;
+}
+.add-to-cart-64 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 49.53%;
+  top: 18.51%;
+  left: 25.45%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 151;
+}
+.vector-65 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 26.07%;
+  left: 10.88%;
+  background: url(./assets/images/d91e41a8-fa86-49dd-816b-a0979fc680bf.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 153;
+}
+.image-66 {
+  position: absolute;
+  width: 196px;
+  height: 65.33%;
+  top: 0;
+  left: 50%;
+  background: url(./assets/images/a86436147b15d71e24d67526aa166cc3768a970d.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(-47.4%, 0);
+  z-index: 154;
+}
+.frame-67 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 94.76%;
+  top: 56.85%;
+  left: 1.9%;
+  z-index: 146;
+}
+.natural-core-twin {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 252.317px;
+  min-width: 0;
+  height: 42px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 540;
+  line-height: 21.2px;
+  text-align: center;
+  z-index: 147;
+}
+.price-68 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 148;
+}
+.rectangle-69 {
+  position: absolute;
+  width: 1920px;
+  height: 1077px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/dog\ bg.png)
+    no-repeat center;
+  background-size: cover;
+}
+.pic-13 {
+  position: absolute;
+  width: 1921px;
+  height: 308px;
+  top: 1077px;
+  left: 0;
+  background: url(./assets/images/783008fafb8ca15df251ccc786cdcaa418102424.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 34;
+}
+
+.rectangle {
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #28aa90; /* เปลี่ยนสีเมื่อ Hover */
+}
+
+/* ป้องกันไม่ให้สามารถคลุมหรือคัดลอกข้อความ */
+.add-to-cart, .add-to-cart-16, .add-to-cart-1a, .add-to-cart-24 {
+  user-select: none;  /* ป้องกันการคลุมข้อความ */
+  cursor: pointer;    /* เปลี่ยนรูปเมาส์เป็นนิ้ว */
+}
+
+

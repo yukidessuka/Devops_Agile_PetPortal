@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="appointment3.css"> 
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        <div class="logo-name">Pet Care Portal</div>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="/home/home.html">Home</a></li>
+                <li><a href="/pet-food-product2/pet-food-product2.html">Serve</a></li>
+                <li><a href="/askvet/askvet.html">Ask a Vet</a></li>
+                <li><a href="/appointment/appointment.html">Appointments</a></li>
+                <li><a href="/Myfeed/Myfeed.html">Community</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
+            <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
+            <div class="profile">
+                <img src="img/profile.png" alt="Profile">
+                <span class="username">Onwara</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid book-appointment">
+        <div class="booking-form">
+            <h2 class="appointment-title">Book Appointment</h2>
+
+            <div class="progress-container">
+                <div class="progress-line"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot active"><span class="choice-label">Information</span></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+            </div>
+
+            <form id="appointmentForm3">
+                <div class="form-section">
+                    <div class="row">
+                        <div class="col">
+                            <label>Name</label>
+                            <input type="text" name="name" placeholder="Type here...">
+                        </div>
+                        <div class="col">
+                            <label>Contact</label>
+                            <input type="text" name="contact" placeholder="Type here...">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Surname</label>
+                            <input type="text" name="surname" placeholder="Type here...">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Pet Name</label>
+                            <input type="text" name="petName" placeholder="Type here...">
+                        </div>
+                        <div class="col">
+                            <label>Breed</label>
+                            <select name="breed">
+                                <option>Select</option>
+                                <option>Cat</option>
+                                <option>Dog</option>
+                                <option>Rabbit</option>
+                                <option>Bird</option>
+                                <option>Duck</option>
+                                <option>Hamster</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <label>Gender</label>
+                    <div class="gender-container">
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="male"> Male
+                        </label>
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Age</label>
+                            <input type="text" name="age" placeholder="Type here...">
+                        </div>
+                    </div>
+
+                    <label>Birth</label>
+                    <input type="text" name="birth" placeholder="Please type here...">
+                </div>
+
+                <div class="button-group">
+                    <a href="/appointment2/appointment2.html" class="btn btn-back">
+                        <i class="fas fa-arrow-left"></i> <span>Back</span>
+                    </a>
+                    <button type="submit" class="btn btn-next">
+                        <span>Next</span> <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="booking-image">
+            <img src="img/appointment.png" alt="Appointment">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.getElementById('appointmentForm3').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+        const data = Object.fromEntries(formData.entries());
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const appointmentId = urlParams.get('id');
+
+        const response = await fetch(`http://localhost:3001/api/appointments/${appointmentId}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            window.location.href = `/appointment4/appointment4.html?id=${appointmentId}`;
+        } else {
+            console.error('Failed to update appointment');
+        }
+    });
+    </script>
+</body>
+</html>

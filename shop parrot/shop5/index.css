@@ -1,0 +1,1940 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1920px;
+  height: 3286px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.flex-row-f {
+  position: relative;
+  width: 1953px;
+  height: 1102px;
+  margin: 0 0 0 -32px;
+  z-index: 180;
+}
+.rectangle {
+  position: absolute;
+  width: 1921px;
+  height: 1102px;
+  top: 0;
+  left: 32px;
+  background: #04505300;
+  opacity: 0.65;
+  z-index: 1;
+}
+.rectangle-1 {
+  position: absolute;
+  width: 1921px;
+  height: 1100px;
+  top: 0;
+  left: 32px;
+  background: #045153;
+  opacity: 0.3;
+  z-index: 2;
+}
+.rectangle-2 {
+  position: absolute;
+  width: 1920px;
+  height: 102px;
+  top: 0;
+  left: 32px;
+  background: #ffffff;
+  z-index: 180;
+}
+.green-no-bg {
+  position: absolute;
+  width: 107px;
+  height: 102px;
+  top: 1px;
+  left: 14px;
+  background: url(https://static.codia.ai/image/2025-03-06/66d0a22c-850e-4fd7-9868-b7179ef28f1a.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 181;
+}
+.ellipse {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 19px;
+  left: 1758px;
+  background: url(https://static.codia.ai/image/2025-03-06/c7e35852-0b7b-4955-873f-7554126e6a7c.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 186;
+  border-radius: 50%;
+}
+.rectangle-3 {
+  position: absolute;
+  width: 113px;
+  height: 27px;
+  top: 30px;
+  left: 1781px;
+  background: #045153;
+  z-index: 184;
+  border-radius: 55px;
+}
+.onwara {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 5px;
+  left: 33px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 185;
+}
+.oui-arrow-up {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 6px;
+  left: 86px;
+  background: url(https://static.codia.ai/image/2025-03-06/b39f1a06-ac21-4597-876b-a2c126aae0c9.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 188;
+  overflow: hidden;
+}
+.solar-cart-linear {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 34px;
+  left: 1674px;
+  z-index: 189;
+  overflow: hidden;
+}
+.solar-cart-linear-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 190;
+  overflow: hidden;
+}
+.group {
+  position: relative;
+  width: 21.053px;
+  height: 21px;
+  margin: 3.5px 0 0 3.473px;
+  background: url(https://static.codia.ai/image/2025-03-06/6c0183d3-4c01-4c95-93e1-d9be26ea4127.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 191;
+}
+.mynaui-chat {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 34px;
+  left: 1627px;
+  background: url(https://static.codia.ai/image/2025-03-06/5df1936e-4598-4fee-89f4-44d64efe95ac.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 209;
+  overflow: hidden;
+}
+.community {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 29.41%;
+  top: 35.29%;
+  left: 62.66%;
+  color: #7f7f7f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 203;
+}
+.blog {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 29.41%;
+  top: 35.29%;
+  left: 44.43%;
+  color: #7f7f7f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 200;
+}
+.pet-care-portal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 18px;
+  top: 36px;
+  left: 113px;
+  color: #7f7f7f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 192;
+}
+.serve {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 29.41%;
+  top: 35.29%;
+  left: 37.55%;
+  color: #7f7f7f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 197;
+}
+.home {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 20.59%;
+  top: 35.29%;
+  left: 29.22%;
+  color: #7f7f7f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 21px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 194;
+}
+.appointment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 29.41%;
+  top: 36.27%;
+  left: 52.14%;
+  color: #7f7f7f;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 206;
+}
+.line {
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  top: 42px;
+  left: 1731px;
+  background: url(https://static.codia.ai/image/2025-03-06/f8f3482a-f45c-46f0-8234-0e607f788f63.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 208;
+}
+.line-5 {
+  position: absolute;
+  width: 0.05%;
+  top: 50.2%;
+  left: 30.52%;
+  background: url(./assets/images/5e38c1da-edeb-4841-be80-136840aeac80.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 195;
+}
+.line-6 {
+  position: absolute;
+  width: 0.05%;
+  top: 55.88%;
+  left: 38.85%;
+  background: url(./assets/images/c89b1c5d-bc73-4bcc-853f-9ab3ac06d62e.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 198;
+}
+.line-7 {
+  position: absolute;
+  width: 0.06%;
+  top: 55.88%;
+  left: 45.66%;
+  background: url(./assets/images/51c96708-78c8-4594-96af-ebc744690b41.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 201;
+}
+.line-8 {
+  position: absolute;
+  width: 0.37%;
+  top: 55.88%;
+  left: 64.12%;
+  background: url(./assets/images/434883cb-98f9-4f96-abd4-53038fc45806.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 204;
+}
+.line-9 {
+  position: absolute;
+  width: 0.11%;
+  top: 56.86%;
+  left: 54.28%;
+  background: url(./assets/images/2567d184-f8a5-4833-a1dd-05d3114ebb89.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 207;
+}
+.back {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 75.6px;
+  height: 4.54%;
+  top: 12.61%;
+  left: 4.97%;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  text-align: left;
+  z-index: 156;
+}
+.ooui-next-rtl {
+  position: absolute;
+  width: 1.38%;
+  height: 2.27%;
+  top: 12.84%;
+  left: 3.33%;
+  z-index: 157;
+  overflow: hidden;
+}
+.vector {
+  position: relative;
+  width: 16.2px;
+  height: 20.833px;
+  margin: 2.084px 0 0 5.4px;
+  background: url(https://static.codia.ai/image/2025-03-06/853fb96f-fc5a-41a3-b07e-cd51974a6011.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 158;
+}
+.parrot-food {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 384px;
+  left: calc(50% - 248.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+.parrot-cleaning-products {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 478px;
+  left: calc(50% - 540.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}
+.rabbit-toy {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 481px;
+  left: calc(50% - 217.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.parrot-cleaning-products-a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 133px;
+  top: 482px;
+  left: calc(50% - 540.5px);
+  color: #ffffff;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 132.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 8;
+}
+.nutrient-rich-blends {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 511px;
+  left: calc(50% - 304.5px);
+  color: #ffffff;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.832px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.colorful-toys {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 21px;
+  top: 511px;
+  left: calc(50% - 300.5px);
+  color: #ffffff;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20.832px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.ooui-next-ltr {
+  position: absolute;
+  width: 41px;
+  height: 37px;
+  top: 664px;
+  left: 908px;
+  background: url(https://static.codia.ai/image/2025-03-06/7ad4da99-164e-4d17-bbb3-8c98ef2197f3.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 173;
+  overflow: hidden;
+}
+.ooui-next-ltr-b {
+  position: absolute;
+  width: 41px;
+  height: 37px;
+  top: 664px;
+  left: 1035px;
+  background: url(https://static.codia.ai/image/2025-03-06/e9ce2c23-6c98-4627-b2a0-4ac25d0f27db.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 172;
+  overflow: hidden;
+}
+.frame {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  position: absolute;
+  width: 86px;
+  height: 14px;
+  top: 675px;
+  left: 50%;
+  transform: translate(-31.98%, 0);
+  z-index: 174;
+}
+.ellipse-c {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(https://static.codia.ai/image/2025-03-06/44d0ca48-453e-4ad0-88f2-0102dde491d5.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 175;
+  border-radius: 50%;
+}
+.ellipse-d {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(https://static.codia.ai/image/2025-03-06/45457683-d5a5-4fce-968b-96b810e0a9f1.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 176;
+}
+.ellipse-e {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(https://static.codia.ai/image/2025-03-06/a3c90611-a4a9-4db6-9583-c109f48d266d.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 177;
+  border-radius: 50%;
+}
+.ellipse-f {
+  flex-shrink: 0;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background: url(https://static.codia.ai/image/2025-03-06/4000e99b-ac09-400d-95ec-91b7f8d1d80e.svg)
+    no-repeat center;
+  background-size: cover;
+  z-index: 178;
+  border-radius: 50%;
+}
+.vector-10 {
+  position: absolute;
+  width: 1858.5px;
+  height: 958px;
+  top: 385px;
+  left: 32px;
+  background: url(https://static.codia.ai/image/2025-03-06/9bd6d86f-0573-4651-a94f-b1d2b226dfe2.svg)
+    no-repeat center;
+  background-size: cover;
+  filter: blur(153px);
+  z-index: 4;
+}
+.rectangle-11 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 232px;
+  height: 45px;
+  margin: 311px 0 0 72px;
+  background: #08b4b9;
+  z-index: 161;
+  border-radius: 25px;
+}
+.parrot-months {
+  flex-shrink: 0;
+  position: relative;
+  height: 23.077px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 161;
+}
+.flex-row-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1275px;
+  height: 300px;
+  margin: 29px 0 0 99px;
+  z-index: 121;
+}
+.rectangle-12 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 13;
+  border-radius: 20px;
+}
+.image {
+  position: relative;
+  width: 141px;
+  height: 141px;
+  margin: 26px 0 0 35px;
+  background: url(./img/1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 22;
+}
+.frame-13 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 0 0 0 4px;
+  z-index: 14;
+}
+.nutribird-a21 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 15;
+}
+.add-to-cart {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 16;
+}
+.rectangle-14 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 20;
+  border-radius: 40.85px;
+}
+.add-to-cart-15 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 19;
+}
+.vector-16 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/b88df24e-0cf4-4294-ad85-14b7ec3b30e8.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 21;
+}
+.rectangle-17 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 25;
+  border-radius: 20px;
+}
+.image-18 {
+  position: relative;
+  width: 129px;
+  height: 129px;
+  margin: 21px 0 0 41px;
+  background: url(./img/2.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 34;
+}
+.frame-19 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 16px 0 0 4px;
+  z-index: 26;
+}
+.lafeber-nutriberries {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 42px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.2px;
+  text-align: center;
+  z-index: 27;
+}
+.add-to-cart-1a {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 28;
+}
+.rectangle-1b {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 2px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 32;
+  border-radius: 40.85px;
+}
+.add-to-cart-1c {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 31;
+}
+.vector-1d {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/ac984495-67a4-4eef-84e8-e70df7b84107.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 33;
+}
+.rectangle-1e {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 109;
+  border-radius: 20px;
+}
+.image-1f {
+  position: relative;
+  width: 138px;
+  height: 138px;
+  margin: 19px 0 0 36px;
+  background: url(./img/3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 118;
+}
+.frame-20 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 10px 0 0 4px;
+  z-index: 110;
+}
+.nutribird-high-protein {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 111;
+}
+.price {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 112;
+}
+.rectangle-21 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 116;
+  border-radius: 40.85px;
+}
+.add-to-cart-22 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 115;
+}
+.vector-23 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/64c1cb5c-6426-4e26-a7bd-2e419ccc6b69.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 117;
+}
+.rectangle-24 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 121;
+  border-radius: 20px;
+}
+.image-25 {
+  position: relative;
+  width: 127px;
+  height: 127px;
+  margin: 23px 0 0 42px;
+  background: url(./img/4.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 130;
+}
+.frame-26 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 17px 0 0 4px;
+  z-index: 122;
+}
+.hari-hagen-tropican {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 123;
+}
+.price-27 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 124;
+}
+.rectangle-28 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 128;
+  border-radius: 40.85px;
+}
+.add-to-cart-29 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 127;
+}
+.vector-2a {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/056d6b1a-7055-4dfa-b3f5-003e331e864a.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 129;
+}
+.rectangle-2b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 232px;
+  height: 45px;
+  margin: 93px 0 0 72px;
+  background: #08b4b9;
+  z-index: 170;
+  border-radius: 25px;
+}
+.adult-1-years {
+  flex-shrink: 0;
+  position: relative;
+  height: 23.077px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 170;
+}
+.flex-row-bb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 920px;
+  height: 300px;
+  margin: 39px 0 0 99px;
+  z-index: 145;
+}
+.rectangle-2c {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 85;
+  border-radius: 20px;
+}
+.image-2d {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  margin: 7px 0 0 37px;
+  background: url(./img/5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 94;
+}
+.frame-2e {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 23px 0 0 4px;
+  z-index: 86;
+}
+.harrisons-adult-lifetime {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 42px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.2px;
+  text-align: center;
+  z-index: 87;
+}
+.price-2f {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 88;
+}
+.rectangle-30 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 2px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 92;
+  border-radius: 40.85px;
+}
+.add-to-cart-31 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 91;
+}
+.vector-32 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/683cbe76-475d-4d7e-9d8c-c85f5807445e.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 93;
+}
+.rectangle-33 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 133;
+  border-radius: 20px;
+}
+.image-34 {
+  position: relative;
+  width: 147px;
+  height: 147px;
+  margin: 16px 0 0 32px;
+  background: url(./img/6.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 142;
+}
+.frame-35 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 14px 0 0 4px;
+  z-index: 134;
+}
+.vitakraft-small-african {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 135;
+}
+.price-36 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 136;
+}
+.rectangle-37 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 13px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 140;
+  border-radius: 40.85px;
+}
+.add-to-cart-38 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 139;
+}
+.vector-39 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/d56dbbbd-46d1-447a-ab74-fa1c6bcacd54.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 141;
+}
+.rectangle-3a {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 145;
+  border-radius: 20px;
+}
+.image-3b {
+  position: relative;
+  width: 147px;
+  height: 147px;
+  margin: 19px 0 0 32px;
+  background: url(./img/7.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 154;
+}
+.frame-3c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 11px 0 0 4px;
+  z-index: 146;
+}
+.parrot-food-3d {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 147;
+}
+.price-3e {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 148;
+}
+.rectangle-3f {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 13px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 152;
+  border-radius: 40.85px;
+}
+.add-to-cart-40 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 151;
+}
+.vector-41 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/bcbed609-8b95-460f-982a-e08a442bef23.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 153;
+}
+.flex-row-a {
+  position: relative;
+  width: 232px;
+  height: 45px;
+  margin: 83px 0 0 72px;
+  z-index: 164;
+}
+.rectangle-42 {
+  position: absolute;
+  width: 229.403px;
+  height: 45px;
+  top: 0;
+  left: 0;
+  background: #08b4b9;
+  z-index: 163;
+  border-radius: 25px;
+}
+.health-food {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 23.077px;
+  top: 10.386px;
+  left: calc(50% - 51.88px);
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 164;
+}
+.flex-row-f-43 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 920px;
+  height: 300px;
+  margin: 33px 0 0 99px;
+  z-index: 97;
+}
+.rectangle-44 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 37;
+  border-radius: 20px;
+}
+.image-45 {
+  position: relative;
+  width: 143px;
+  height: 143px;
+  margin: 11px 0 0 34px;
+  background: url(./img/8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 46;
+}
+.frame-46 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 13px 0 0 4px;
+  z-index: 38;
+}
+.cockatiel-food {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 39;
+}
+.price-47 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 40;
+}
+.rectangle-48 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 44;
+  border-radius: 40.85px;
+}
+.add-to-cart-49 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 43;
+}
+.vector-4a {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/647164e9-bb89-44c6-8235-d9ca442f4fea.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 45;
+}
+.rectangle-4b {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 49;
+  border-radius: 20px;
+}
+.image-4c {
+  position: relative;
+  width: 127px;
+  height: 127px;
+  margin: 38px 0 0 42px;
+  background: url(./img/9.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 58;
+}
+.frame-4d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 2px 0 0 4px;
+  z-index: 50;
+}
+.parrot-diet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 51;
+}
+.price-4e {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 52;
+}
+.rectangle-4f {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 56;
+  border-radius: 40.85px;
+}
+.add-to-cart-50 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 55;
+}
+.vector-51 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/79882eef-03a7-4180-b4d7-de56eab38a7b.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 57;
+}
+.rectangle-52 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 97;
+  border-radius: 20px;
+}
+.image-53 {
+  position: relative;
+  width: 145px;
+  height: 145px;
+  margin: 11px 0 0 33px;
+  background: url(./img/10.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 106;
+}
+.frame-54 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 11px 0 0 4px;
+  z-index: 98;
+}
+.nutri-bird-p-tropical {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 99;
+}
+.price-55 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 100;
+}
+.rectangle-56 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 104;
+  border-radius: 40.85px;
+}
+.add-to-cart-57 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 103;
+}
+.vector-58 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/2ea51a15-bf77-437e-a2ea-80498cab71a8.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 105;
+}
+.rectangle-59 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 232px;
+  height: 45px;
+  margin: 89px 0 0 72px;
+  background: #08b4b9;
+  z-index: 167;
+  border-radius: 25px;
+}
+.others {
+  flex-shrink: 0;
+  position: relative;
+  height: 23.077px;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 19.5px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 167;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 565px;
+  height: 300px;
+  margin: 27px 0 0 99px;
+  z-index: 73;
+}
+.rectangle-5a {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 73;
+  border-radius: 20px;
+}
+.image-5b {
+  position: relative;
+  width: 114px;
+  height: 114px;
+  margin: 27px 0 0 48px;
+  background: url(./img/11.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 82;
+}
+.frame-5c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 26px 0 0 4px;
+  z-index: 74;
+}
+.browns-baked-fruit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 75;
+}
+.price-5d {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 76;
+}
+.add-to-cart-5e {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 80;
+  border-radius: 40.85px;
+}
+.vector-5f {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 79;
+}
+.rectangle-60 {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/95fe3764-edf0-4686-aac5-c56daa671c17.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 81;
+}
+.image-61 {
+  flex-shrink: 0;
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  z-index: 61;
+  border-radius: 20px;
+}
+.frame-62 {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  margin: 14px 0 0 37px;
+  background: url(./img/12.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 70;
+}
+.lafeber-nutri-berries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 199px;
+  margin: 17px 0 0 4px;
+  z-index: 62;
+}
+.price-63 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 199px;
+  min-width: 0;
+  height: 40px;
+  color: #045153;
+  font-family: Denton Test, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 19.875px;
+  text-align: center;
+  z-index: 63;
+}
+.rectangle-64 {
+  align-self: stretch;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  height: 20px;
+  color: #045153;
+  font-family: DM Sans, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 19.53px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 64;
+}
+.add-to-cart-65 {
+  position: relative;
+  width: 153px;
+  height: 37.879px;
+  margin: 3px 0 0 34px;
+  border: 1.485px solid #045153;
+  z-index: 68;
+  border-radius: 40.85px;
+}
+.vector-66 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  height: 58.08%;
+  top: 15.69%;
+  left: 25.24%;
+  color: #045153;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 14.854369163513184px;
+  font-weight: 800;
+  line-height: 22px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 67;
+}
+.freepik-the-style-is-candid {
+  position: absolute;
+  width: 9.71%;
+  height: 39.22%;
+  top: 25.49%;
+  left: 10.68%;
+  background: url(https://static.codia.ai/image/2025-03-06/eb501071-f6e7-4487-95cb-7a3bbc2816d6.svg)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 69;
+}
+.pic-14 {
+  position: absolute;
+  width: 1921.724px;
+  height: 1103.556px;
+  top: -1.368px;
+  left: -0.51px;
+  background: url(./img/bg.png)
+    no-repeat center;
+  background-size: cover;
+}
+.pic-15 {
+  position: absolute;
+  width: 1920px;
+  height: 267px;
+  top: 1100px;
+  left: 0;
+  background: url(./img/food.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}

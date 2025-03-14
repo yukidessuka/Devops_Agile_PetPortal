@@ -1,0 +1,306 @@
+/* 🔹 General Styling */
+body {
+    font-family: Poppins;
+    background: #D4FFF6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+/* Profile and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* This will ensure the image maintains its aspect ratio and fills the circle without stretching */
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* 🔹 Sub Navigation Bar */
+.sub-nav {
+    display: flex;
+    justify-content: space-between; /* กระจายลิงก์และช่องค้นหา */
+    align-items: center;
+    padding: 10px 40px;
+    background: #D4FFF6;
+    border-bottom: 1px solid #D9D9D9; /* เส้นขีดแยกด้านล่าง */
+}
+
+/* 🔹 ลิงก์ด้านซ้าย */
+.sub-links {
+    display: flex;
+    gap: 20px; /* ระยะห่างระหว่างลิงก์ */
+}
+
+.sub-links a {
+    color: #28AA90;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.back-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.back-button img {
+    width: 30px; /* ขนาดของปุ่ม */
+    height: auto;
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ให้เป็นมือเมื่อชี้ไปที่ปุ่ม */
+}
+
+/* Header Section */
+.article-header {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.article-title h1 {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #045153;
+    margin-left: 70px; /* เพิ่มระยะห่างไปทางขวา */
+    margin-top: 5px; /* ลดระยะห่างจากปุ่ม */
+    margin-bottom: 5px; /* ลดระยะห่างระหว่างหัวข้อกับข้อความด้านล่าง */
+}
+
+h1 {
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: #045153;
+    margin-left: 70px; /* เพิ่มระยะห่างไปทางขวา */
+    margin-top: 5px; /* ลดระยะห่างจากปุ่ม */
+    margin-bottom: 5px; /* ลดระยะห่างระหว่างหัวข้อกับข้อความด้านล่าง */
+}
+
+.author-info {
+    color: #045153;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;  /* ลดระยะห่างระหว่างบรรทัด */
+    margin-left: 155px;
+}
+
+.author-info p {
+    margin: 0px;
+}
+
+.author-info info {
+    color: #045153;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 110px;
+}
+
+.author-info location {
+    color: #045153;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 110px;
+}
+
+.cat-image {
+    width: 100%;
+    max-width: 638px;
+    margin: 20px auto;
+    display: block;
+}
+
+* Comments Section */
+
+.comments-header {
+    font-size: 20px;
+    font-weight: 700;
+    color: #045153;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* ทำให้อยู่ตำแหน่งเดียวกับ Comment */
+}
+
+.comments-section {
+    padding: 0 15px;
+}
+
+.comment-header h1 {
+    font-size: 20px;  /* ขนาดฟอนต์ */
+    font-weight: 700;  /* ความหนาของฟอนต์ */
+    color: #045153;
+    margin-bottom: 5px;
+    margin-left: 1px;
+}
+
+.comments-header h2 {
+    color: #045153;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 300px;
+}
+
+.comment {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 1200px; /* ปรับความกว้างให้เหมาะสม */
+    box-shadow: 0px 6.54px 6.54px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: auto;  /* จัดคอมเมนต์ให้อยู่กลาง */
+    margin-right: auto; /* จัดคอมเมนต์ให้อยู่กลาง */
+}
+
+.comment-header p {
+    font-size: 16px;  /* ขนาดฟอนต์ */
+    font-weight: 500;  /* ความหนาของฟอนต์ */
+    color: #045153;
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+
+
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: center;
+}
+
+.like, .comment-action {
+    font-size: 13px;  /* ขนาดฟอนต์ */
+    font-weight: 500;  /* ความหนาของฟอนต์ */
+    color: black;
+}
+
+/* Feedback Section */
+.feedback-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.feedback-section h3 {
+    color: #09B5B9;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.feedback-section p {
+    color: #09B5B9;
+}
+
+.feedback-btn {
+    background-color: #28AA90;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.feedback-btn:hover {
+    background-color: #239c74;
+}

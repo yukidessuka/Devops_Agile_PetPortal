@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+/* Profile and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    padding: 0;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* This will ensure the image maintains its aspect ratio and fills the circle without stretching */
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* ป้องกันการบีบรูป */
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0; /* ให้เต็มจอ ไม่มีขอบ */
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ป้องกัน margin/padding ที่ทำให้มีช่องว่าง */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Nutrition Header */
+.nutrition-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* จัดชิดซ้าย */
+    align-items: center;
+    padding: 50px 5%;
+    background-color: white;
+}
+
+/* จัดเรียงรูปและข้อความ */
+.nutrition-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* รูป */
+.nutrition-content img {
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* กล่องข้อความ */
+.nutrition-text {
+    width: 50%;
+    text-align: left; /* จัดข้อความชิดซ้าย */
+}
+
+.nutrition-text h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.nutrition-text h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.nutrition-text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .nutrition-header {
+        justify-content: center; /* ให้ยังดูดีในจอเล็ก */
+    }
+
+    .nutrition-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nutrition-content img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .nutrition-text {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Nutrition Grid */
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nutrition Box */
+.nutrition-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 10px solid; /* เพิ่มสีกรอบด้านบน */
+}
+
+/* แยกสีของกล่องแต่ละอัน */
+.nutrition-box:nth-child(1) { border-color: #C49A6C; } /* สีน้ำตาลอ่อน */
+.nutrition-box:nth-child(2) { border-color: #6F6D62; } /* สีเทาเข้ม */
+.nutrition-box:nth-child(3) { border-color: #5E3424; } /* น้ำตาลแดง */
+.nutrition-box:nth-child(4) { border-color: #8D6E63; } /* น้ำตาล */
+.nutrition-box:nth-child(5) { border-color: #ECC4AA; } /* ครีมส้ม */
+.nutrition-box:nth-child(6) { border-color: #000000; } /* ดำ */
+
+.nutrition-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.nutrition-box h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    margin: 15px 0;
+}
+
+.nutrition-box p {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    text-align: left;
+    margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .nutrition-grid {
+        grid-template-columns: repeat(2, 1fr); /* ลดเหลือ 2 คอลัมน์ */
+    }
+}
+
+@media (max-width: 768px) {
+    .nutrition-grid {
+        grid-template-columns: 1fr; /* แสดงคอลัมน์เดียว */
+    }
+
+    .nutrition-box img {
+        height: 180px;
+    }
+}

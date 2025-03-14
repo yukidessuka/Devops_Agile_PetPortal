@@ -1,0 +1,385 @@
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: #28AA90;
+    position: absolute;
+}
+
+.logo img {
+    max-width: 85px;
+}
+
+.logo-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28AA90;
+    margin-left: 90px;
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take available space */
+    text-align: center;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the items */
+    gap: 50px;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar-nav li a:hover {
+    color: #28AA90;
+}
+
+/* Profile and Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons a {
+    padding: 0;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.icons i:hover {
+    color: #28AA90;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* This will ensure the image maintains its aspect ratio and fills the circle without stretching */
+}
+
+.username {
+    font-weight: bold;
+    color: #505050;
+}
+
+/* ปุ่ม Back */
+.back-button {
+    position: absolute;
+    top: 150px; /* ปรับระยะห่างจากขอบบน */
+    left: 30px; /* ปรับระยะห่างจากขอบซ้าย */
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0); /* ให้พื้นหลังโปร่งแสง */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.back-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ปุ่มนำทาง (ลูกศรซ้ายและขวา) */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    z-index: 10;
+    top: 40%;
+}
+
+/* ลูกศรซ้ายและขวา */
+.nav-arrow img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* จุด 4 จุด (ใช้ img) */
+.nav-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-dots img {
+    width: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* ถ้ามีจุดที่ active */
+.nav-dots img.active {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/hero-image.png') no-repeat center center/cover;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 0;
+    background-position: center 35%;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 81, 83, 0.5); /* ทำให้รูปมืดลง */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: -8%;
+}
+
+.hero-content h1 {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Denton Test;
+}
+
+.hero-content p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.best-selling {
+    background: #28AA90;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+/* ปรับตำแหน่งสินค้า */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* ให้ทุกสินค้าอยู่ที่ฐานเดียวกัน */
+    gap: 80px; /* ลดช่องว่างให้สมดุล */
+    position: relative;
+    margin-top: -120px; /* ลดระยะสินค้าขึ้นไปจาก background */
+    text-align: center;
+}
+
+/* ปรับให้สินค้าจัดเรียงในแนวตั้ง */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ปรับขนาดรูปสินค้า */
+.product img {
+    max-height: 180px; /* เพิ่มขนาดให้รูปใหญ่ขึ้น */
+    object-fit: contain;
+}
+
+/* ปรับให้ชื่อสินค้าและราคาอยู่ตรงกัน */
+.product h3,
+.product p {
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    max-width: 180px;
+}
+
+/* ป้าย Best Selling Products ให้ใหญ่ขึ้น */
+.best-selling-label {
+    position: relative  ;
+    top: -35px; /* ปรับให้เหมาะสม */
+    left: -25px;
+    background: #013220; /* พื้นหลังสีเข้ม */
+    color: white;
+    padding: 16px 32px; /* เพิ่มขนาดป้าย */
+    border-radius: 30px; /* เพิ่มความโค้งมน */
+    font-weight: bold;
+    font-size: 20px; /* ขยายตัวหนังสือ */
+    text-align: center;
+    white-space: nowrap; /* ป้องกันข้อความขึ้นบรรทัดใหม่ */
+}
+
+/* Promotion Section */
+.promotions {
+    background: #f4f4f4; /* สีพื้นหลัง */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.promotion-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+    grid-template-rows: auto auto; /* 2 แถว */
+    gap: 20px;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    align-items: center;
+}
+
+/* ปรับขนาดให้รูปแถวบนทั้งหมดมีขนาดเท่ากัน */
+.promotion:nth-child(1) {
+    width: 80%;
+    height: auto;
+    justify-self: left;
+}
+
+.promotion:nth-child(3) {
+    width: 80%;
+    height: auto;
+    justify-self: right;
+}
+
+/* ปรับขนาดรูปแถวบนตรงกลางให้ใหญ่ขึ้น */
+.promotion:nth-child(2) {
+    width: 120%;
+    height: auto;
+    grid-column: span 1; /* ให้ครอบ 1 คอลัมน์ */
+    justify-self: center;
+}
+
+/* ปรับตำแหน่งรูปแถวล่างให้สมมาตรกับรูปแถวบน */
+.promotion:nth-child(4) {
+    grid-column: 1 / span 1; /* ให้ครอบพื้นที่ 2 คอลัมน์ด้านซ้าย */
+    justify-self: left; /* ขยับไปทางขวาให้สมมาตร */
+    width: 150%;
+}
+
+.promotion:nth-child(5) {
+    grid-column: 3 / span 1; /* ให้ครอบพื้นที่ 2 คอลัมน์ด้านขวา */
+    justify-self: right; /* ขยับไปทางซ้ายให้สมมาตร */
+    width: 150%;
+}
+
+/* ปรับระยะห่าง */
+.promotion img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* พื้นหลังส่วน Categories Header */
+.categories-header {
+    background: #2CA58D; /* เปลี่ยนสีพื้นหลังให้ตรงกับรูปที่ 2 */
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.categories-header h2 {
+    font-size: 80px; /* ปรับขนาดตัวอักษร */
+    font-weight: 780;
+    font-family: 'Denton Test';
+    margin-bottom: 10px;
+}
+
+.categories-header p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:#045153;
+}
+
+/* พื้นหลังของ Category Container */
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* ปรับช่องไฟระหว่างรูปให้เล็กลง */
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 30px 10px; /* ลด padding ด้านข้างเพื่อให้ภาพชิดกันมากขึ้น */
+    width: 80%; /* ปรับขนาด container ให้แคบลง */
+    margin: auto;
+}
+
+/* ปรับให้แต่ละ category ไม่มีพื้นหลัง ไม่มีขอบ */
+.category {
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+}
+
+/* ปรับขนาดของรูปภาพสัตว์เลี้ยง */
+.category a {
+    display: contents;
+    width: 100%;
+    height: 100%;
+    padding: 0; /* ไม่ให้มี padding เพิ่มเติม */
+    margin: 0; /* ไม่มี margin เพื่อให้แนบสนิท */
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ปรับขนาดรูปภาพ */
+.category img {
+    width: 80%; /* ปรับให้รูปเต็มขนาดของ grid */
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+
+

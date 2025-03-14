@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Portal - Cart</title>
+
+    <!-- ลิงก์ไปยัง Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- ลิงก์ไปยัง FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- ลิงก์ไปยังไฟล์ CSS หลัก -->
+    <link rel="stylesheet" href="list-of-pet.css">
+</head>
+<body>
+
+    <script src="list-of-pet.js"></script>
+
+    <header>
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="images/green top left.png" alt="Logo">
+                <span class="logo-name">Pet Care Portal</span>
+            </div>
+
+            <nav>
+                <ul class="navbar-nav">
+                    <li><a href="/home/home.html">Home</a></li>
+                    <li><a href="/pet-food-product2/pet-food-product2.html">Serve</a></li>
+                    <li><a href="/askvet/askvet.html">Ask a Vet</a></li>
+                    <li><a href="/appointment/appointment.html">Appointments</a></li>
+                    <li><a href="/Myfeed/Myfeed.html">Community</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons-container">
+                <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
+                <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
+                <div class="profile">
+                    <img src="images/Yuki.jpg" alt="Profile">
+                    <span class="username">Onwara</span>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>    
+<div class="search-container">
+    <div class="date-navigation">
+        <button class="date-nav-button" onclick="changeDate('prev')">◀</button>
+        <span id="current-date">January 17, 2025</span>
+        <button class="date-nav-button" onclick="changeDate('next')">▶</button>
+    </div>
+    <input type="text" id="search" class="search-bar" placeholder="Search for pets...">
+</div>    
+    <div class="container">
+        <h3 style="text-align: left; color: #045153;">List of pet : 6</h3>
+        <div class="pet-list" id="petList">
+            
+            <!-- Pet Card: Lucky -->
+            <div class="pet-card">
+                <img src="./images/Lucky.png" alt="Lucky">
+                <div class="pet-info">
+                    <div class="pet-title-container">
+                        <div class="pet-title"><span>Lucky</span> ✏️</div>
+                        <a href="/lucky/lucky.html" class="pet-title"><span>Medical Record</span></a>
+                    </div>
+                    <div class="pet-details">
+                        <div class="details-left">
+                            <p>Type/Bleed</p>
+                            <p>Gender</p>
+                            <p>Age</p>
+                            <p>Weight</p>
+                        </div>
+                        <div class="details-right">
+                            <p>Dog - Shih Tzu</p>
+                            <p>Male</p>
+                            <p>4 years</p>
+                            <p>2.5 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Pet Card: Valo -->
+            <div class="pet-card">
+                <img src="./images/Valo.png" alt="Valo">
+                <div class="pet-info">
+                    <div class="pet-title-container">
+                        <div class="pet-title"><span>Valo</span> ✏️</div>
+                        <a href="/valo/valo.html" class="pet-title"><span>Medical Record</span></a>
+                    </div>
+                    <div class="pet-details">
+                        <div class="details-left">
+                            <p>Type/Bleed</p>
+                            <p>Gender</p>
+                            <p>Age</p>
+                            <p>Weight</p>
+                        </div>
+                        <div class="details-right">
+                            <p>Cat - Scottish Fold</p>
+                            <p>Female</p>
+                            <p>2 years 6 months</p>
+                            <p>1.8 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Pet Card: Laika -->
+            <div class="pet-card">
+                <img src="./images/Laika.png" alt="Laika">
+                <div class="pet-info">
+                    <div class="pet-title-container">
+                        <div class="pet-title"><span>Laika</span> ✏️</div>
+                        <a href="/laika/laika.html" class="pet-title"><span>Medical Record</span></a>
+                    </div>
+                    <div class="pet-details">
+                        <div class="details-left">
+                            <p>Type/Bleed</p>
+                            <p>Gender</p>
+                            <p>Age</p>
+                            <p>Weight</p>
+                        </div>
+                        <div class="details-right">
+                            <p>Rabbit - Holland Lop</p>
+                            <p>Male</p>
+                            <p>1 years 3 months</p>
+                            <p>1.8 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Pet Card: Rainbow -->
+            <div class="pet-card">
+                <img src="./images/Rainbow.png" alt="Rainbow">
+                <div class="pet-info">
+                    <div class="pet-title-container">
+                        <div class="pet-title"><span>Rainbow</span> ✏️</div>
+                        <a href="/rainbow/rainbow.html" class="pet-title"><span>Medical Record</span></a>
+                    </div>
+                    <div class="pet-details">
+                        <div class="details-left">
+                            <p>Type/Bleed</p>
+                            <p>Gender</p>
+                            <p>Age</p>
+                            <p>Weight</p>
+                        </div>
+                        <div class="details-right">
+                            <p>Parrot - Sun Conure</p>
+                            <p>Female</p>
+                            <p>3 years</p>
+                            <p>0.9 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Pet Card: Baboi -->
+            <div class="pet-card">
+                <img src="./images/Baboi.png" alt="Baboi">
+                <div class="pet-info">
+                    <div class="pet-title-container">
+                        <div class="pet-title"><span>Baboi</span> ✏️</div>
+                        <a href="/Baboi/Baboi.html" class="pet-title"><span>Medical Record</span></a>
+                    </div>
+                    <div class="pet-details">
+                        <div class="details-left">
+                            <p>Type/Bleed</p>
+                            <p>Gender</p>
+                            <p>Age</p>
+                            <p>Weight</p>
+                        </div>
+                        <div class="details-right">
+                            <p>Hamster - Campbell</p>
+                            <p>Male</p>
+                            <p>6 months</p>
+                            <p>0.3 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Pet Card: Shelly -->
+            <div class="pet-card">
+                <img src="./images/Shelly.png" alt="Shelly">
+                <div class="pet-info">
+                    <div class="pet-title-container">
+                        <div class="pet-title"><span>Shelly</span> ✏️</div>
+                        <a href="/Shelly/shelly.html" class="pet-title"><span>Medical Record</span></a>
+                    </div>
+                    <div class="pet-details">
+                        <div class="details-left">
+                            <p>Type/Bleed</p>
+                            <p>Gender</p>
+                            <p>Age</p>
+                            <p>Weight</p>
+                        </div>
+                        <div class="details-right">
+                            <p>Tortoise - Greek</p>
+                            <p>Male</p>
+                            <p>10 years</p>
+                            <p>1.8 kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+        </div>
+    </div>
+
+</body>
+</html>

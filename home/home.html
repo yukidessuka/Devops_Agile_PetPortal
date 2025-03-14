@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Portal</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- Add FontAwesome link -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        <div class="logo-name">Pet Care Portal</div>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="/home/home.html">Home</a></li>
+                <li><a href="/pet-food-product2/pet-food-product2.html">Serve</a></li>
+                <li><a href="/askvet/askvet.html">Ask a Vet</a></li>
+                <li><a href="/appointment/appointment.html">Appointments</a></li>
+                <li><a href="/Myfeed/Myfeed.html">Community</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="/askvet/askvet.html"><i class="fas fa-comment"></i></a>
+            <a href="/cart/cart.html"><i class="fas fa-shopping-cart"></i></a> |
+            <div class="profile">
+                <a href="/account/index.html"><img src="img/profile.png" alt="Profile"></a>
+                <a href="/account/index.html" class="username">Onwara</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Best Care of Our <br> Little Friends</h1>
+                <div class="hero-buttons">
+                    <a class="appointment-btn" href="/appointment/appointment.html" >Appointment</a>
+                    <a class="medical-record-btn" href="/list-of-pet/list-of-pet.html" >Medical Record</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Community By Categories</h2>
+        <div class="category-grid">
+            <div class="category"><a href="/cat-community/cat-community.html"><img src="img/cat.png" alt="Cat"></a></div>
+            <div class="category"><a href="/dog-community/dog-community.html"><img src="img/dog.png" alt="Dog"></a></div>
+            <div class="category"><a href="/rabbit-community/rabbit-community.html"><img src="img/rabbit.png" alt="Rabbit"></a></div>
+            <div class="category"><a href="/parrot-community/parrot-community.html"><img src="img/bird.png" alt="Bird"></a></div>
+            <div class="category"><a href="/duck-community/duck-community.html"><img src="img/duck.png" alt="Duck"></a></div>
+            <div class="category"><a href="/hamster-community/hamster-community.html"><img src="img/hamster.png" alt="Hamster"></a></div>
+        </div>
+    </section>
+
+    <!-- Pet Grooming & Training -->
+    <div class="grooming-section-wrapper">
+        <section class="grooming-section">
+            <div class="grooming">
+                <a href="/pet grooming/pet-grooming.html"><img src="img/pet-grooming.png" alt="Pet Grooming"></a>
+            </div>
+            <div class="training">
+                <a href="/dog-training/dog-training.html"><img src="img/pet-training.png" alt="Pet Training"></a>
+            </div>
+            <div class="nutrition">
+                <a href="/pet Nutrition/pet-nutrition.html"><img src="img/pet-nutrition.png" alt="Pet Nutrition"></a>
+            </div>
+        </section>
+    
+        <section class="tracker">
+            <a href="/Tracker/tracker.html"><img src="img/tracker-banner.png" alt="Pet Tracker"></a>
+        </section>
+    </div>
+    <!-- News & Reviews -->
+
+    <!-- News & Reviews -->
+<section class="news">
+    <h2>Recent News & Review</h2>
+    <div class="news-container">
+        <div class="news-left">
+            <div class="news-item">
+                <img src="img/news1.png" alt="News 1">
+                <div class="news-content">
+                    <h3>Why Are Annual Health Checkups for Pets Important? Expert Insights</h3>
+                    <p class="author">—— Nadia Inwza</p>
+                </div>
+            </div>
+        </div>
+        <div class="news-right">
+            <div class="quote-news">
+                <blockquote>
+                    “ New Service Launch! 24/7 Online Vet Consultations at Pet Care Portal ”
+                </blockquote>
+                <p class="author">—— Perchey Chillman</p>
+            </div>
+            <div class="news-item">
+                <img src="img/news2.png" alt="News 2">
+                <div class="news-content">
+                    <h3>5 Ways to Care for Your Pets During Winter for Better Health and Comfort</h3>
+                    <p class="author">—— Lisa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Pet Care Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.querySelector('.username').textContent = username;
+            }
+        });
+    </script>
+</body>
+</html>

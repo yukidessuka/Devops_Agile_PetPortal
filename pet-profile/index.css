@@ -1,0 +1,643 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    background: #edf9f5;
+    overflow: hidden;
+    width: 100vw; /* หรือ width: 100% */
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .rectangle {
+    position: relative;
+    width: 1920px;
+    height: 102px;
+    margin: 0 0 0 0;
+    background: #ffffff;
+    z-index: 27;
+  }
+  .green-no-bg {
+    position: absolute;
+    width: 107px;
+    height: 102px;
+    top: 1px;
+    left: 14px;
+    background: url(./img/pet1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 28;
+  }
+  .ellipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 19px;
+    left: 1758px;
+    background: url(./img/yukinaja.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 33;
+    border-radius: 50%;
+  }
+  .rectangle-1 {
+    position: absolute;
+    width: 113px;
+    height: 27px;
+    top: 30px;
+    left: 1781px;
+    background: #045153;
+    z-index: 31;
+    border-radius: 55px;
+  }
+  .onwara {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 18px;
+    top: 5px;
+    left: 33px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 32;
+  }
+  .oui-arrow-up {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6px;
+    left: 86px;
+    background: url(https://static.codia.ai/image/2025-03-06/7bfe8410-879b-4a17-8eac-0ad0e5a64d67.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 35;
+    overflow: hidden;
+  }
+  .solar-cart-linear {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 34px;
+    left: 1674px;
+    z-index: 36;
+    overflow: hidden;
+  }
+  .solar-cart-linear-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 37;
+    overflow: hidden;
+  }
+  .group {
+    position: relative;
+    width: 21.053px;
+    height: 21px;
+    margin: 3.5px 0 0 3.473px;
+    background: url(https://static.codia.ai/image/2025-03-06/e1844c65-7962-4657-9c83-094c127ef186.svg)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 38;
+  }
+  .mynaui-chat {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 34px;
+    left: 1627px;
+    background: url(https://static.codia.ai/image/2025-03-06/9b0aa508-b7b5-4afd-877a-6125ea58dbf5.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 56;
+    overflow: hidden;
+  }
+  .community {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 29.41%;
+    top: 35.29%;
+    left: 62.66%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 50;
+  }
+  .ask-a-vet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 29.41%;
+    top: 35.29%;
+    left: 44.43%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 47;
+  }
+  .pet-care-portal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 18px;
+    top: 36px;
+    left: 113px;
+    color: #28aa90;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 39;
+  }
+  .serve {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 29.41%;
+    top: 35.29%;
+    left: 37.55%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 44;
+  }
+  .home {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 20.59%;
+    top: 35.29%;
+    left: 29.22%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 21px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 41;
+  }
+  .appointment {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 29.41%;
+    top: 36.27%;
+    left: 52.14%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 53;
+  }
+  .line {
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    top: 42px;
+    left: 1731px;
+    background: url(https://static.codia.ai/image/2025-03-06/e2ccb849-58af-4576-ae63-9bf20930c4fd.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 55;
+  }
+  .line-3 {
+    position: absolute;
+    width: 0.05%;
+    top: 50.2%;
+    left: 30.52%;
+    background: url(./assets/images/865840c9-a88e-43e2-97b2-aa11cc65d48f.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 42;
+  }
+  .line-4 {
+    position: absolute;
+    width: 0.05%;
+    top: 55.88%;
+    left: 38.85%;
+    background: url(./assets/images/9391fa0b-f4b6-43fb-afa1-efdc71d811cb.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 45;
+  }
+  .line-5 {
+    position: absolute;
+    width: 0.06%;
+    top: 55.88%;
+    left: 45.66%;
+    background: url(./assets/images/9c3ee0a1-fbde-4699-af67-9cc3341f2add.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 48;
+  }
+  .line-6 {
+    position: absolute;
+    width: 0.37%;
+    top: 55.88%;
+    left: 64.12%;
+    background: url(./assets/images/d8ba66f8-2d4a-42c7-ba9a-d903352ff9ee.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 51;
+  }
+  .line-7 {
+    position: absolute;
+    width: 0.11%;
+    top: 56.86%;
+    left: 54.28%;
+    background: url(./assets/images/872ac56d-1245-4f2e-971a-f777f2cc88e7.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 54;
+  }
+  .rectangle-8 {
+    position: absolute;
+    width: 144px;
+    height: 986px;
+    top: 94px;
+    left: 0;
+    background: #ffffff;
+    box-shadow: 0 17px 10px 0 rgba(0, 0, 0, 0.25);
+  }
+  .ellipse-9 {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 30px 0 0 33px;
+    background: url(./img/yuki2.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 2;
+    border-radius: 50%;
+  }
+  .onwara-p {
+    display: block;
+    position: relative;
+    height: 15px;
+    margin: 5px 0 0 48px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .email {
+    display: block;
+    position: relative;
+    height: 11px;
+    margin: 0 0 0 10px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 7px;
+    font-weight: 275;
+    line-height: 10.5px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 4;
+  }
+  .line-a {
+    position: relative;
+    width: 115.018px;
+    height: 1px;
+    margin: 18px 0 0 14px;
+    background: url(https://static.codia.ai/image/2025-03-06/9e5f7d81-d9c8-4104-a54d-b515cbd468f8.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 5;
+  }
+  .account {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 1.83%;
+    top: 17.75%;
+    left: 36.11%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 13;
+  }
+  .profile-fill {
+    position: absolute;
+    width: 9.72%;
+    height: 1.42%;
+    top: 17.95%;
+    left: 16.67%;
+    background: url(https://static.codia.ai/image/2025-03-06/aba82cbf-3e29-45a8-886d-263594af4766.svg)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 14;
+    overflow: hidden;
+  }
+  .pet-profile-b {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 1.83%;
+    top: 21.7%;
+    left: 36.11%;
+    color: #045153;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .mdi-pets {
+    position: absolute;
+    width: 11.11%;
+    height: 1.62%;
+    top: 21.81%;
+    left: 15.97%;
+    background: url(https://static.codia.ai/image/2025-03-06/5c4e5f23-6967-4cc8-9959-885742c7fe63.svg)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 8;
+    overflow: hidden;
+  }
+  .waiting-appointments-calendar {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin: -1px 0 0 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .tracker {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 1.83%;
+    top: 25.56%;
+    left: 36.11%;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .waiting-appointments-calendar-c {
+    position: absolute;
+    width: 9.72%;
+    height: 1.42%;
+    top: 25.76%;
+    left: 16.67%;
+    background: url(https://static.codia.ai/image/2025-03-06/5e4fdf09-c6c6-4666-b2a3-68d526848b8a.svg)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 11;
+    overflow: hidden;
+  }
+  .logout-outline {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 287px;
+    left: 24px;
+    background: url(https://static.codia.ai/image/2025-03-06/b47e2e2a-bd68-49bf-b83d-729cbd8a4740.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 58;
+    overflow: hidden;
+  }
+  .log-out {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 18px;
+    top: 290px;
+    left: 50px;
+    color: #7f7f7f;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 57;
+  }
+  .list-of-pets {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 54px;
+    top: 148px;
+    left: 226px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  .rectangle-d {
+    position: absolute;
+    width: 762.613px;
+    height: 133.419px;
+    top: 209px;
+    left: 1097.807px;
+    background: #ffffff;
+    z-index: 19;
+    border-radius: 22.742px;
+    box-shadow: 7.581px 6.065px 6.065px 0 rgba(0, 0, 0, 0.38);
+  }
+  .rectangle-e {
+    position: absolute;
+    width: 98.548px;
+    height: 94px;
+    top: 19.71px;
+    left: 42.451px;
+    background: url(./img/bunny.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 20;
+    border-radius: 7.581px;
+  }
+  .baboi-rabbit-feline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: 53.064px;
+    left: 195.58px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 21.225807189941406px;
+    font-weight: 500;
+    line-height: 31.839px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 21;
+  }
+  .rectangle-f {
+    position: absolute;
+    width: 762.613px;
+    height: 133.419px;
+    top: 218.097px;
+    left: 223px;
+    background: #ffffff;
+    z-index: 16;
+    border-radius: 22.742px;
+    box-shadow: 7.581px 6.065px 6.065px 0 rgba(0, 0, 0, 0.38);
+  }
+  .rectangle-10 {
+    position: absolute;
+    width: 98.548px;
+    height: 94px;
+    top: 19.71px;
+    left: 42.451px;
+    background: url(./img/valo.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 17;
+    border-radius: 7.581px;
+  }
+  .valo-cat-feline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 32px;
+    top: 53.064px;
+    left: 195.58px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 21.225807189941406px;
+    font-weight: 500;
+    line-height: 31.839px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 18;
+  }
+  .rectangle-11 {
+    position: absolute;
+    width: 60.65%;
+    height: 8.7%;
+    top: 35.65%;
+    left: 24.13%;
+    background: #ffffff;
+    border: 1.516px solid #28aa90;
+    z-index: 24;
+    border-radius: 18.194px;
+  }
+  .add-your-pet-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 47.87%;
+    top: 24.19%;
+    left: 36.46%;
+    color: #28aa90;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 30.322580337524414px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 25;
+  }
+  .add-your-pet-list-12 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    height: 45px;
+    top: 43.839px;
+    left: 408.548px;
+    color: #ffffff;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 30.322580337524414px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 22;
+  }

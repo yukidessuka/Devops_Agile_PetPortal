@@ -1,0 +1,69 @@
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: app.Dockerfile
+    ports:
+      - 80:80
+  login:
+    build: 
+      context: .
+      dockerfile: login.Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - MONGODB_URI=mongodb://root:example@mongo:27017/petcare
+    networks:
+      - app
+  cart:
+    build: 
+      context: .
+      dockerfile: cart.Dockerfile
+    ports:
+      - 3004:3004
+    environment:
+      - MONGODB_URI=mongodb://root:example@mongo:27017/petcare
+    networks:
+      - app
+  cat-community:
+    build: 
+      context: .
+      dockerfile: cat-community.Dockerfile
+    ports:
+      - 3002:3002
+    environment:
+      - MONGODB_URI=mongodb://root:example@mongo:27017/petcare
+    networks:
+      - app
+  appointment:
+    build: 
+      context: .
+      dockerfile: appointment.Dockerfile
+    ports:
+      - 3001:3001
+    environment:
+      - MONGODB_URI=mongodb://root:example@mongo:27017/petcare
+    networks:
+      - app
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
+    networks:
+      - app
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
+      ME_CONFIG_BASICAUTH: false
+networks:
+  app:
